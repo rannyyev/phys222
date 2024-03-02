@@ -34,21 +34,30 @@ Snell's law is given by
 \end{equation}
 where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1$ and $\theta_2$ are the angles of incidence and refraction, respectively
 
+\section{Data \& Results}
+
 Calculations for table 1:
 
 
 Calculations for table 2:
 \begin{align}
-    \delta_{min} &= 360.00\degree-351.80\degree+29.82\degree = 38.02\degree & \text{Violet} \\
-    \delta_{min} &= 360.00\degree-351.80\degree+29.51\degree = 38.31\degree & \text{Blue} \\
-    \delta_{min} &= 360.00\degree-351.80\degree+27.63\degree = 40.19\degree & \text{Green} \\
-    \delta_{min} &= 360.00\degree-351.80\degree+28.64\degree = 39.18\degree & \text{Orange}
+    &\delta_{min}(\text{Violet}) = 360.00\degree-351.80\degree+29.82\degree = 38.02\degree \\
+    &\delta_{min}(\text{Blue}) = 360.00\degree-351.80\degree+29.51\degree = 38.31\degree \\
+    &\delta_{min}(\text{Green}) = 360.00\degree-351.80\degree+27.63\degree = 40.19\degree \\
+    &\delta_{min}(\text{Orange}) = 360.00\degree-351.80\degree+28.64\degree = 39.18\degree 
 \end{align}
 
 And the refractive index is given by
 \begin{equation}
-    n = \dfrac{\sin\left(\dfrac{\delta_{min}+\alpha}{2}\right)}{\sin\left(\dfrac{\alpha}{2}\right)},
+    n = \frac{\sin\left(\frac{\delta_{min}+\alpha}{2}\right)}{\sin\left(\frac{\alpha}{2}\right)},
 \end{equation}
+where $\alpha$ is the angle of the prism. Hence, the refractive index for each wavelength is given by
+\begin{align}
+    n_{\text{Violet}} &= \frac{\sin\left(\frac{38.02\degree+59.87\degree}{2}\right)}{\sin\left(\frac{59.87\degree}{2}\right)} = 1.77 \\
+    n_{\text{Blue}} &= \frac{\sin\left(\frac{38.31\degree+59.87\degree}{2}\right)}{\sin\left(\frac{59.87\degree}{2}\right)} = 1.78 \\
+    n_{\text{Green}} &= \frac{\sin\left(\frac{40.19\degree+59.87\degree}{2}\right)}{\sin\left(\frac{59.87\degree}{2}\right)} = 1.79 \\
+    n_{\text{Orange}} &= \frac{\sin\left(\frac{39.18\degree+59.87\degree}{2}\right)}{\sin\left(\frac{59.87\degree}{2}\right)} = 1.78
+\end{align}
 
 
 THe angle of prism is given by
@@ -83,20 +92,18 @@ THe angle of prism is given by
         \hline
         $\lambda$ (nm) & Position \#1 & Position \#2 & $\delta_{min}$ & $n$ \\
         \hline
-        $404.6$ Violet & $351\degree 48'$ & $29\degree 49'$ & $38.02$ & \\
+        $404.6$ Violet & $351\degree 48'$ & $29\degree 49'$ & $38.02$ & 1.77 \\
         \hline
-        $435.8$ Blue & $351\degree 48'$ & $29\degree 28'$ & $38.31$ & \\
+        $435.8$ Blue & $351\degree 48'$ & $29\degree 28'$ & $38.31$ & 1.78 \\
         \hline
-        $546.1$ Green & $351\degree 48'$ & $27\degree 40'$ & $40.19$ & \\
+        $546.1$ Green & $351\degree 48'$ & $27\degree 40'$ & $40.19$ & 1.79 \\
         \hline
-        $579.1$ Orange & $351\degree 48'$ & $28\degree 41'$ & $39.18$ & \\
+        $579.1$ Orange & $351\degree 48'$ & $28\degree 41'$ & $39.18$ & 1.78 \\
         \hline
     \end{tabular}
     \caption{Data for the refractive index versus wavelength.}
     \label{tab:2}
 \end{table}
-
-
 
 \section{Discussion \& Conclusion}
 
