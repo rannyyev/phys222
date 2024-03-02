@@ -1,3 +1,1 @@
-# PHYS222: Optics and Waves Laboratoryyy
-
-efef
+# PHYS222: Optics and Waves Laboratory
