@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Bravyi_2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4056742fce887076c80f0034d53928a9}{%
+           family={Kliesch},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cdfbd0231ad92671f46b6726c7d08799}{%
+           family={Koenig},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2cbfe72970f5add69ed59639de5aebd1}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{fullhash}{867225865886e15a28136e3c2d096b71}
+      \strng{bibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorbibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorfullhash}{867225865886e15a28136e3c2d096b71}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{month}{12}
+      \field{number}{26}
+      \field{volume}{125}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1103/physrevlett.125.260505
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1103%2Fphysrevlett.125.260505
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103%2Fphysrevlett.125.260505
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
