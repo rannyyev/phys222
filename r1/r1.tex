@@ -18,20 +18,27 @@ In this experiment, we utilize a prism spectrometer---an optical device that sep
 \end{abstract}
 
 \section{Introduction}
-The visible spectrum is the portion of electromagnetic radiation that is visible to the human eye. It is composed of light with wavelengths between 380 and 780 nm. Each wavelength, or frequency of light is perceived as a different color by the human eye\cite{Marcus_1998}. 
+The visible spectrum is the portion of electromagnetic radiation that is visible to the human eye. It is composed of light with wavelengths between 380 and 780 nm. Each wavelength, or frequency of light is perceived as a different color by the human eye\cite{Marcus_1998}. Spectrum analysis is the study of measure and interpretation of electromagnetic spectra. It is used in various fields such as physics, chemistry, and astronomy. One of the most important tools in spectrum analysis is the prism spectrometer. 
 
+A prism spectrometer is an optical device, and it is composed of a collimator, a prism, and a telescope. The collimator is a device that produces a parallel beam of light. It is composed of an adjustable slit on one end and a converging lens on the other. The slit is used to control the width of the entering light, and the lens is used to focus the light into a parallel beam. As the beam exits the collimator, it impinges on the prism. The prism rests on a rotatable table, and it is used to refract and disperse the light into its constituent colors. The telescope is used to observe the dispersed light, and it is composed of a lens and an eyepiece. The set of parallel beams of different wavelengths form images of the slit. The telescope can be rotated with the aid of the reticle to position the images for each spectral line. 
+The instrument that is used throughout the experiment to measure the angles is called a vernier scale.
 
-A prism spectrometer is an optical device used in spectrum analysis. It is composed of a collimator, a prism, and a telescope.
-
-The collimator is a device that produces a parallel beam of light. It is composed of an adjustable slit on one end and a lens on the other. The slit is used to control the width of the beam of light, and the lens is used to focus the light into a parallel beam. 
-
-The prism is used to refract and disperse the light into its constituent frequencies. The angle of deviation of the light is measured and used to calculate the refractive index of the prism using a special relation.
-
-Snell's law is given by
+In this experiment, we use the spectrometer to measure the refractive index of the prism. The refractive index of a prism is a measure of how much the light is bent as it passes through the prism. Examine Figure~\ref{fig:1}. As you can see, $\delta$ is the angle of deviation of the light---the angle between the incident and emergent beams of light, and $\alpha$ is the apex angle of the prism---the angle between two faces of the prism. The deviation angle is dependent on the wavelength of the light.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.72\textwidth]{figures/f1.pdf}
+    \caption{Refraction of light through a prism.}
+    \label{fig:1}
+\end{figure}
+As we vary the incident angle, the deviation angle changes, and we can obtain its minimum value. This happens when the angle of incidence is equal to the angle of emergence. Hence, in this case, the refractive index of the prism is given by the relation
+\begin{equation}
+    n = \frac{\sin\left((\delta_{min}+\alpha) / 2 \right)}{\sin\left(\alpha / 2\right)},
+\end{equation}
+which is derived from Snell's law,
 \begin{equation}
     n_1 \sin(\theta_1) = n_2 \sin(\theta_2),
 \end{equation}
-where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1$ and $\theta_2$ are the angles of incidence and refraction, respectively
+where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1$ and $\theta_2$ are the angles of incidence and refraction, respectively. Note that the light is refracted twice as it enters and exits the prism. 
 
 \section{Data \& Results}
 
