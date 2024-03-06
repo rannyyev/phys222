@@ -11,6 +11,7 @@
 \RequirePackage{tablefootnote} 
 \RequirePackage{colortbl} 
 \RequirePackage{xcolor}
+\usepackage{placeins}
 
 \addbibresource{references.bib}
 
@@ -140,9 +141,28 @@ In the second part of the experiment, we measured the minimum angle of deviation
     \end{tblr}
     \caption{Data for the refractive index versus wavelength.}
 \end{table}
+After obtaining the refractive index for each wavelength, we can plot two graphs, showing relationship between refractive index and wavelength.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/f2.png}
+    \caption{Refraction index versus wavelength.}
+    \label{fig:2}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/f3.png}
+    \caption{Refraction index versus inverse square of wavelength.}
+    \label{fig:3}
+\end{figure}
+
+\FloatBarrier
 
 \section{Discussion \& Conclusion}
 This is just for a test commit.
+
+
 \printbibliography
 
 \end{document}

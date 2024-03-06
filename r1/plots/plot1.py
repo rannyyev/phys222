@@ -1,19 +1,19 @@
-from scipy.interpolate import CubicSpline
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [404.6, 435.8, 546.1, 579.1]
-y = [1.77, 1.78, 1.79, 1.78]
+wavelengths = [404.6, 435.8, 546.1, 579.1]
+refractive_indices = [1.5357, 1.5243, 1.5144, 1.5111]
 
-f = CubicSpline(x, y, bc_type='natural')
-x_new = np.linspace(400, 600, 1000)
-y_new = f(x_new)
+m, b = np.polyfit(wavelengths, refractive_indices, 1)
+x_fit = np.linspace(400, 600, 100)
+y_fit = m * x_fit + b
 
-plt.figure(figsize = (10,8))
-plt.plot(x_new, y_new, 'b')
-plt.plot(x, y, 'ro')
-plt.title('Refractive Index of Prism vs Wavelength')
+plt.plot(wavelengths, refractive_indices, 'o', label='Data')
+plt.plot(x_fit, y_fit, label='Best fit line')
 plt.xlabel('Wavelength (nm)')
-plt.ylabel('Refractive Index')
-plt.grid(True)
-plt.show()
+plt.ylabel('Refractive index')
+plt.grid()
+plt.legend()
+plt.title('Refractive index(n) vs wavelength(λ)')
+
+plt.savefig('refractive_index_vs_wavelength.png')

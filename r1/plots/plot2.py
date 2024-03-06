@@ -1,17 +1,23 @@
-import numpy as np
-from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [1/(404.6**2), 1/(435.8**2), 1/(546.1**2), 1/(579.1**2)]
-y = [1.77, 1.78, 1.79, 1.78]
+wavelengths = [404.6, 435.8, 546.1, 579.1]
+refractive_indices = [1.5357, 1.5243, 1.5144, 1.5111]
 
-def f(x, A, B): # this is your 'straight line' y=f(x)
-  return A*x + B
+for i in range(len(wavelengths)):
+    wavelengths[i] = 1 / wavelengths[i]**2
 
-popt, pcov = curve_fit(f, x, y) # your data x, y to fit
-print(popt) # your A and B
+plt.plot(wavelengths, refractive_indices, 'o', label='Data')
 
-plt.plot(x, y, 'ro')
-plt.plot(x, f(np.array(x), *popt), 'b')
-plt.grid(True)
-plt.show()
+m, b = np.polyfit(wavelengths, refractive_indices, 1)
+x_fit = np.linspace(2*10**-6, 8*10**-6, 100)
+y_fit = m * x_fit + b
+plt.plot(x_fit, y_fit, label='y = {:.2e}x + {:.2f}'.format(m, b))
+
+plt.xlabel('1/λ^2 (nm^-2)')
+plt.ylabel('Refractive index')
+plt.grid()
+plt.legend()
+plt.title('Refractive index(n) vs 1/λ^2')
+
+plt.savefig('refractive_index_vs_1_over_lambda_squared.png')
