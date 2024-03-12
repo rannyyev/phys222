@@ -18,8 +18,8 @@ x = [float(i[2]) for i in data]
 y = [float(i[1]) for i in data]
 
 plt.plot(x, y)
-plt.xlabel('Angular Position ($\theta$)')
+plt.xlabel('Angular Position (degrees)')
 plt.ylabel('Intensity (a.u.)')
 plt.grid()
-plt.title(r'Measured Intensities versus Angular Position ($\theta$)')
+plt.title(r'Measured Intensities versus Angular Position ($\theta)')
 plt.savefig('r2\\figures\plot1.png')
