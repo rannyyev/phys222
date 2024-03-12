@@ -14,7 +14,7 @@ x_fit = np.linspace(2*10**-6, 8*10**-6, 100)
 y_fit = m * x_fit + b
 plt.plot(x_fit, y_fit, label='y = {:.2e}x + {:.2f}'.format(m, b))
 
-plt.xlabel(r'$1 / \lambda^2 \, \text{nm}^{-2}$')
+plt.xlabel(r'$1 / \lambda^2 \, (\text{nm}^{-2})$')
 plt.ylabel('Refractive index')
 plt.grid()
 plt.legend()

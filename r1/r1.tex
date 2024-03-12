@@ -63,7 +63,7 @@ The minimum angle of deviation occurs when the angle of incidence is equal to th
     \label{eq:1}
     n = \frac{\sin\left((\delta_{min}+\alpha) / 2 \right)}{\sin\left(\alpha / 2\right)},
 \end{equation}
-which is derived from Snell's law\cite[]{Hecht_2017},
+which is derived from Snell's law \cite{Hecht_2017},
 \begin{equation}
     n_1 \sin(\theta_1) = n_2 \sin(\theta_2),
 \end{equation}
@@ -72,7 +72,7 @@ where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1
     \delta_{min} = 360\degree - \texttt{Position1} + \texttt{Position2}.
 \end{equation}
 
-A dispersion curve is a graph of the refractive index versus wavelength. It can be represented using the Cauchy equation\cite[]{Pedrotti_2013},
+A dispersion curve is a graph of the refractive index versus wavelength. It can be represented using the Cauchy equation \cite{Pedrotti_2013},
 \begin{equation}
     n(\lambda) = A + \frac{B}{\lambda^2} + \frac{C}{\lambda^4} + \cdots,
 \end{equation}
@@ -124,7 +124,11 @@ The results of the second part of the experiment are shown in Table~\ref{tab:2}.
     \end{tblr}
     \caption{Data for the refractive index versus wavelength.}
 \end{table}
-After evaluating the refractive index for each wavelength, we proceeded to plot two graphs. The first graph shows the relationship between the refractive index of the prism and the wavelength of the light. The second graph shows the relationship between the refractive index and the inverse square of the wavelength, and the line is the least squares fit of the data. The values of the constants $A$ and $B$ are obtained and shown in the graph. The results are shown in Figures~\ref{fig:2} and \ref{fig:3}.
+
+After evaluating the refractive index for each wavelength, two graphs were plotted. The results are shown in Figures~\ref{fig:2} and \ref{fig:3}. The first graph shows the relationship between the refractive index of the prism and the wavelength of the light. The second graph shows the relationship between the refractive index and the inverse square of the wavelength, and the line is the least squares fit of the data. The values of the constants $A$ and $B$ are obtained: $A = 1.58$ and $B = 0.00734$.
+\begin{equation}
+    n(\lambda) = 1.58 + \dfrac{0.00734}{\lambda^2}.
+\end{equation}
 
 \begin{figure}[ht]
     \centering
@@ -140,22 +144,18 @@ After evaluating the refractive index for each wavelength, we proceeded to plot 
     \label{fig:3}
 \end{figure}
 
-From the equations of best fit lines, we can deduce constant $A$ and $B$ replacing it to the Cauchy equation we get: 
-\begin{equation}
-    n(\lambda) = 1.58 + \frac{0.00734}{\lambda^2}.
-\end{equation}
 \FloatBarrier % Prevents figures from floating into the next section
  
 \section{Discussion \& Conclusion}
 
+Due to the analog nature of this experiment, human error is inevitable. In particular, manually reading the angles using a vernier scale introduces some errors. Moreover, manually adjusting the telescope to find the minimum deviation angle is another source of error.
 
-Due to the analog nature of this experiment, human error is inevitable. In particular, manually reading the angles using a vernier scale introduces some error. Moreover, manually adjusting the telescope to find the minimum deviation angle is another source of error.
+Before and during the experiment, certain assumptions were made, including the assumption that the light source was monochromatic, the prism was perfectly shaped and uniform, the refractive index of air was 1, and the telescope was perfectly calibrated. However, these assumptions may not hold in real-life scenarios and could introduce errors in the results.
 
-Before and during the experiment, some assumptions were made, such as the light source is monochromatic, the prism is perfectly shaped and uniform, the refractive index of air is 1, and the telescope is perfectly calibrated. These assumptions may not hold true in real life and may introduce some error to the results.
+Despite these limitations, the experiment aligns with the theoretical values in every aspect except for the number of spectral lines. This discrepancy might be explained by the fact that some of these lines are too close together for the human eye to discern.
 
-Despite these limitations, the experiment is in line with the theoretical values. Everything, except for the number of spectral lines, aligns with the theory. This discrepancy might be explained by the fact that some of these lines are too close together for the human eye to distinguish.
+In conclusion, the experiment was successful, with results largely aligning with the theoretical values. Introducing optoelectronics in further studies could minimize human error and enhance the accuracy of the results.
 
-In conclusion, the experiment was successful, with results largely in line with the theoretical values. Introducing optoelectronics in further studies could minimize human error and improve the accuracy of the results.
 \printbibliography
 
 \end{document}
