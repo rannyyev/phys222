@@ -30,13 +30,11 @@
 
 \begin{abstract}
 
-An electromagnetic (EM) wave is a disturbance that propagates in the electromagnetic field. It consists of two components, electric and magnetic fields, oscillating perpendicular to each other and the direction of the propagation. The polarization of an EM wave is the orientation of the electric field vector as the wave progresses in space. A polarized wave is one in which the electric field vector traces a specific pattern along the plane perpendicular to the direction of the propagation. Natural sources of electromagnetic radiation emit unpolarized light, that is, radiation in which the electric field oscillates in all possible directions. A polarizer is an optical device capable of polarizing the radiation. There are three types of polarization: linear, circular, and elliptical. Light is also an EM wave; hence, it is subject to polarization. In this experiment, we verify Malu's law by employing two polarizers, one of which serves as a polarizer, and the other as an analyzer. The intensity of the light after passing the analyzer is measured as a function of the angle between the axes of the polarizer and the analyzer. The results are consistent with Malu's law. The type of polarization is also determined.
+An electromagnetic (EM) wave is a disturbance that propagates in the electromagnetic field. It consists of two components, electric and magnetic fields, oscillating perpendicular to each other and the direction of the propagation. The polarization of an EM wave is the orientation of the electric field vector as the wave progresses in space. A polarized wave is one in which the electric field vector traces a specific pattern along the plane perpendicular to the direction of the propagation. Natural sources of electromagnetic radiation emit unpolarized light, that is, radiation in which the electric field oscillates in all possible directions. A polarizer is an optical device capable of polarizing the radiation. There are three types of polarization: linear, circular, and elliptical. Light is also an EM wave; hence, it is subject to polarization. In this experiment, we verify Malu's law by employing two polarizers, one of which serves as a polarizer, and the other as an analyzer. The intensity of the light after passing the analyzer is measured as a function of the angle between the axes of the polarizer and the analyzer. The results are consistent with Malu's law. The type of polarization is linear.
 
 \end{abstract}
 
 \section{Introduction}
-
-\td{Add some references.}
 
 A wave is a disturbance of a continuous medium that propagates with a fixed shape at constant velocity. If the medium is the \textit{electromagnetic field}, the wave is called an \textit{electromagnetic wave}. 
 
@@ -60,42 +58,49 @@ Light is one of the types of electromagnetic waves, and in this experiment, we w
   \label{fig:1}
 \end{figure}
 
-Let's denote the angle between the axis of the first polarizer and axis of the analyzer as $\theta$. If the intensity of the light before passing the analyzer is $I_0$, and the intensity of the light after passing the analyzer is $I$, then the Malu's law states that the intensity of the light after passing the analyzer is given by the equation\cite[]{Hecht_2017}
+Let's denote the angle between the axis of the first polarizer and the axis of the analyzer as $\theta$. If the intensity of the light before passing the analyzer is $I_0$, and the intensity of the light after passing the analyzer is $I$, then Malu's law states that the intensity of the light after passing the analyzer is given by the equation \cite{Hecht_2017}:
+
 \begin{equation}
-  I = I_{in}\left[H_{90}+\left(H_0-H_{90}\right)\right]
+  I(\theta)_{out} = I_{in}\left[H_{90}+\left(H_0-H_{90}\right)\right]\cos^2\theta
   \label{eq:1}
 \end{equation}
 
-The procedure of the experiment as follows. First, we turn on the laser and adjust the polarizers so that their axes are parallel. Next, we turn on the interface, namely Pasco\textsuperscript{\textregistered} Xplorer GLX, and start the data collection. We rotate the analyezer by 400\degree. Then we stop the data collection and conclude the experiment.
+The procedure of the experiment is as follows. First, we turn on the laser and adjust the polarizers so that their axes are parallel. Next, we turn on the interface, namely Pasco\textsuperscript{\textregistered} Xplorer GLX, and start the data collection. We rotate the analyzer by 400\degree. Then we stop the data collection and conclude the experiment.
 
 \section{Data \& Results}
-After extracting the data and plotting it using Python, we obtained the following plot of the intensity of the light after passing the analyzer as a function of the angle between the axes of the polarizer and the analyzer (see Figure \ref{fig:2}).
-Plot appears to be in form of a sinusoidal function. After fitting to data using Python again it can observed that best fit line is in form of $I(\theta) = a + b\cos^2(\theta)$ (see Figure \ref{fig:3}), or more precisely:
+
+After extracting and processing the data collected in the experiment, we obtained the plot intensity of the light after passing the analyzer as a function of the angle between the axes of the polarizer and the analyzer (see Figure~\ref{fig:2}).
+The plot appears to be in the form of a sinusoidal function. Performing the best fit of the data (see Figure~\ref{fig:3}), a line of the form $I(\theta) = a + b\cos^2(\theta)$ was obtained:
+
 \begin{equation}
-  I(\theta) = 2.3271\cos^2(1.001\cdot\theta+1.42)
+  I(\theta) = 2.3271\cos^2(1.001\theta+1.42)
   \label{eq:2}
 \end{equation}
-\begin{figure}[ht]
+
+\begin{figure}[h!]
   \centering
   \includegraphics[scale=0.6]{plots/plot1.png}
-  \caption{Plot of the intensity of the light after passing the analyzer as a function of the angle between the axes of the polarizer and the analyzer.}
+  \caption{Plot of the intensity of the polarized light versus the angle between the axes of the polarizer and the analyzer.}
   \label{fig:2}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h!]
   \centering
   \includegraphics[scale=0.6]{plots/plot2.png}
-  \caption{Best fit of the data to the Malu's law.}
+  \caption{Best-fit of the data to Malu's law.}
   \label{fig:3}
 \end{figure}
-Which tells us that the Malu's law is verified, and also suggests that our incident light is linearly polarized.
+
+This suggests that Malu's law is consistent with the data, and the light is linearly polarized. 
  
 \section{Discussion \& Conclusion}
-Due to computerized nature of this experiment, error is minimized. However, there are still some sources of error. First one being manual allignment of polarizers at the start of the experiment, which is the reason for phase shift in the best fit line. Another point of error is manual rotation of the analyzer, which wasn't uniform is the reason behind the fluctations at some points, and also higher density of points in some regions that others.
 
-Anotther point of error lies in best fit line. It being best fit line, it is not the exact representation of the data. However due to more than 100 data points we can fairly assume that it is close to the real value.
+The equipment used to collect the data was a digital interface that minimized the error in the measurements. However, there are still some sources of error. The phase shift in the best-fit line is due to the manual alignment of the polarizers at the start of the experiment. The fluctuations in the plot are due to the manual rotation of the analyzer, which was not uniform. The higher density of points in some regions than others is also due to the speed of rotation of the analyzer.
 
-In conclusion, experiment was successful in verifying the Malu's law, and also in determining that the incident light is linearly polarized, and also was fully in line with the theory.
+Another source of error is the best-fit plot. It is not the exact representation of the data. However, due to the large number of data points, we can assume that it is close to the real value.
+
+In conclusion, the experiment was successful in verifying Malu's law, and also in determining that the incident light is linearly polarized.
+
 \printbibliography
 
 \end{document}
