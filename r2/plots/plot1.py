@@ -11,8 +11,7 @@ def processinputdata(filename):
             lines.append(line.strip().split())
     return lines
 
-# Example usage
-data = processinputdata('r2\plots\data.txt')[2:135]
+data = processinputdata('data.txt')[2:135]
 
 x = [float(i[2]) for i in data]
 y = [float(i[1]) for i in data]
@@ -21,5 +20,5 @@ plt.plot(x, y)
 plt.xlabel('Angular Position (degrees)')
 plt.ylabel('Intensity (a.u.)')
 plt.grid()
-plt.title(r'Measured Intensities versus Angular Position ($\theta)')
-plt.savefig('r2\\figures\plot1.png')
+plt.title(r'Measured intensities versus angular position ($\theta$)')
+plt.savefig('plot1.png', dpi=300)
