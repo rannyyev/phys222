@@ -60,17 +60,21 @@ Light is one of the types of electromagnetic waves, and in this experiment, we w
   \label{fig:1}
 \end{figure}
 
-Let's denote the angle between the axis of the first polarizer and axis of the analyzer as $\theta$. If the intensity of the light before passing the analyzer is $I_0$, and the intensity of the light after passing the analyzer is $I$, then the Malu's law states that the intensity of the light after passing the analyzer is given by the equation
+Let's denote the angle between the axis of the first polarizer and axis of the analyzer as $\theta$. If the intensity of the light before passing the analyzer is $I_0$, and the intensity of the light after passing the analyzer is $I$, then the Malu's law states that the intensity of the light after passing the analyzer is given by the equation\cite[]{Hecht_2017}
 \begin{equation}
-  I = ...
+  I = I_{in}\left[H_{90}+\left(H_0-H_{90}\right)\right]
   \label{eq:1}
 \end{equation}
-\td{Add the equation for Malu's law. I don't like one in the manual. It doesn't make any sense.}
 
 The procedure of the experiment as follows. First, we turn on the laser and adjust the polarizers so that their axes are parallel. Next, we turn on the interface, namely Pasco\textsuperscript{\textregistered} Xplorer GLX, and start the data collection. We rotate the analyezer by 400\degree. Then we stop the data collection and conclude the experiment.
 
 \section{Data \& Results}
-
+After extracting the data and plotting it using Python, we obtained the following plot of the intensity of the light after passing the analyzer as a function of the angle between the axes of the polarizer and the analyzer (see Figure \ref{fig:2}).
+Plot appears to be in form of a sinusoidal function. After fitting to data using Python again it can observed that best fit line is in form of $I(\theta) = a + b\cos^2(\theta)$ (see Figure \ref{fig:3}), or more precisely:
+\begin{equation}
+  I(\theta) = 2.3271\cos^2(1.001\cdot\theta+1.42)
+  \label{eq:2}
+\end{equation}
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=0.6]{plots/plot1.png}
@@ -78,13 +82,20 @@ The procedure of the experiment as follows. First, we turn on the laser and adju
   \label{fig:2}
 \end{figure}
 
-\td{The plot looks really funky. Maybe fit the data to the equation given in the manual?}
-
-
-\td{Don't forget to write about the type of polarization.}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.6]{plots/plot2.png}
+  \caption{Best fit of the data to the Malu's law.}
+  \label{fig:3}
+\end{figure}
+Which tells us that the Malu's law is verified, and also suggests that our incident light is linearly polarized.
  
 \section{Discussion \& Conclusion}
+Due to computerized nature of this experiment, error is minimized. However, there are still some sources of error. First one being manual allignment of polarizers at the start of the experiment, which is the reason for phase shift in the best fit line. Another point of error is manual rotation of the analyzer, which wasn't uniform is the reason behind the fluctations at some points, and also higher density of points in some regions that others.
 
+Anotther point of error lies in best fit line. It being best fit line, it is not the exact representation of the data. However due to more than 100 data points we can fairly assume that it is close to the real value.
+
+In conclusion, experiment was successful in verifying the Malu's law, and also in determining that the incident light is linearly polarized, and also was fully in line with the theory.
 \printbibliography
 
 \end{document}
