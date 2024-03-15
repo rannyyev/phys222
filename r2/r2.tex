@@ -6,7 +6,7 @@
 
 % Default 
 \usepackage{graphicx}
-\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 
 % Additional
 \usepackage{amsmath}
@@ -38,9 +38,9 @@ An electromagnetic (EM) wave is a disturbance that propagates in the electromagn
 
 A wave is a disturbance of a continuous medium that propagates with a fixed shape at constant velocity. If the medium is the \textit{electromagnetic field}, the wave is called an \textit{electromagnetic wave}. 
 
-An electromagnetic wave is comprised of two synchronized oscillations of electric and magnetic fields. Both fields are perpendicular to each other and to the direction of the propagation. Hence, an electromagnetic wave is a \textit{transverse wave}.
+An electromagnetic wave is comprised of two synchronized oscillations of electric and magnetic fields. Both fields are perpendicular to each other and the direction of the propagation. Hence, an electromagnetic wave is a \textit{transverse wave}.
 
-An electromagnetic wave can be represented by two perpendicular components. If there is a well-defined relationship between the two components, the wave is said to be \textit{polarized}. An electromagnetic wave that is not polarized is called \textit{unpolarized wave}. The electric field of an unpolarized wave oscillates in all planes perpendicular to the direction of the propagation; it is a mixture of waves with different polarizations. Such a wave can be polarized by passing through a special filter called a \textit{polarizer}.
+An electromagnetic wave can be represented by two perpendicular components. If there is a well-defined relationship between the two components, the wave is said to be \textit{polarized}. An electromagnetic wave that is not polarized is called \textit{unpolarized wave}. The electric field of an unpolarized wave oscillates in all planes perpendicular to the direction of the propagation; it is a mixture of waves with different polarizations. Such a wave can be polarized by passing through a special filter called a \textit{polarizer} \cite{Hecht_2017}.
 
 Essentially, polarization is the phenomenon of restricting, or fixing the oscillation of the electric field of light to a single plane. There are several types of polarization:
 \begin{itemize}
@@ -58,11 +58,16 @@ Light is one of the types of electromagnetic waves, and in this experiment, we w
   \label{fig:1}
 \end{figure}
 
-Let's denote the angle between the axis of the first polarizer and the axis of the analyzer as $\theta$. If the intensity of the light before passing the analyzer is $I_0$, and the intensity of the light after passing the analyzer is $I$, then Malu's law states that the intensity of the light after passing the analyzer is given by the equation \cite{Hecht_2017}:
+Let's denote the angle between the axis of the first polarizer and the axis of the analyzer as $\theta$. If the intensity of the light before passing the analyzer is $I_0$, and the intensity of the light after passing the analyzer is $I$, then Malu's law states that the intensity of the light after passing the analyzer is given by the equation \cite{Damian_2006}:
 
 \begin{equation}
   I(\theta)_{out} = I_{in}\left[H_{90}+\left(H_0-H_{90}\right)\right]\cos^2\theta
   \label{eq:1}
+\end{equation}
+where $H_0=\frac{1}{2}(k_1^2 + k_2^2)$ is the transmittance when the axes of the polarizer and the analyzer are parallel, and $H_{90}=k_1k_2$ is the transmittance when the axes of the polarizer and the analyzer are perpendicular. $k_1$ and $k_2$ are referred as \textit{principal intensity transmittances}. The ideal values of $k_1$ and $k_2$ are 1 and 0, respectively. In such a case, the intensity of the light after passing the analyzer is given by the equation:
+
+\begin{equation}
+  I(\theta)_{out} = \dfrac{1}{2}I_{in}\cos^2\theta
 \end{equation}
 
 The procedure of the experiment is as follows. First, we turn on the laser and adjust the polarizers so that their axes are parallel. Next, we turn on the interface, namely Pasco\textsuperscript{\textregistered} Xplorer GLX, and start the data collection. We rotate the analyzer by 400\degree. Then we stop the data collection and conclude the experiment.
@@ -77,14 +82,14 @@ The plot appears to be in the form of a sinusoidal function. Performing the best
   \label{eq:2}
 \end{equation}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
   \includegraphics[scale=0.6]{plots/plot1.png}
   \caption{Plot of the intensity of the polarized light versus the angle between the axes of the polarizer and the analyzer.}
   \label{fig:2}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
   \includegraphics[scale=0.6]{plots/plot2.png}
   \caption{Best-fit of the data to Malu's law.}
