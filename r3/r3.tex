@@ -20,6 +20,7 @@
 \newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small]{#1}}
 
 \addbibresource{references.bib}
+\everymath{\displaystyle}
 
 \title{Microwave Optics I} 
 \author{Rahmanyaz Annyyev, Hikmat Gulaliyev} 
@@ -64,7 +65,7 @@ where $n$ is the refractive index of the material. In part B of the experiment, 
   \label{fig:2}
 \end{figure}
 
-The polarization of an electromagnetic wave is the orientation of the electric field vector. The polarization of a wave can be linear, circular, or elliptical. In part C of the experiment, we use a polarization grille to change the polarization of microwaves and measure the effect of the grille on the intensity of the microwaves. The setup is shown in Figure~\ref{fig:3}.
+The polarization of an electromagnetic wave is the orientation of the electric field vector. The polarization of a wave can be linear, circular, or elliptical. In part C of the experiment, we use a polarization grille to change the polarization of microwaves and measure the effect of the grille on the intensity of the microwaves. The setup is shown in Figure~\ref{fig:3}. In configuration 4 there is some interference present that affects the intensity, however, the phase shift isn't equal to $\pi$ so there is no complete destructive interference.
 
 \begin{figure}[ht]
   \centering
@@ -75,7 +76,7 @@ The polarization of an electromagnetic wave is the orientation of the electric f
 
 \section{Data \& Results}
 
-The results of part A are shown in Table~\ref{tab:1}. The average value of the wavelength of microwaves is found to be $\bar{\lambda} = 2.925$ cm. 
+The results of part A are shown in Table~\ref{tab:1}. The average value of the wavelength of microwaves is found to be $\bar{\lambda} = 2 \frac{\sum\left|x_{i+1}-x_1\right|}{N-1} = 2.925$ cm. 
 
 \begin{table}[ht]
   \label{tab:1}
@@ -94,7 +95,14 @@ The results of part A are shown in Table~\ref{tab:1}. The average value of the w
   \end{tblr}
   \caption{Data for standing waves, part A.}
 \end{table}
+In part B of the experiment, zero intensity was measured in configurations 1 and 2. The width of the perspex block is measured to be $w = 2.45$ cm. From these:
+\begin{gather}
+  \label{eq:1}
+  L(n-1) \cong \frac{\lambda}{2} \\ n \cong 1 + \frac{\lambda}{2L} \\ n = 1 + \frac{2.925}{2.45\cdot 2} = 1.59 
+\end{gather} 
+Using this value of $n$, the speed of microwaves in Perspex is found to be $v = \frac{c}{n} = \frac{3\times 10^8}{1.59} = 1.89\times 10^8$ m/s.
 
+In configurations 3 and 4 there was some drop in intensity. However, since in configuration 3 both parts of the wave pass through the block there wasn't any interference, but some phase shift.  
 The results of part C are shown in Table~\ref{tab:2}.
 
 \begin{table}[ht]
@@ -116,9 +124,20 @@ The results of part C are shown in Table~\ref{tab:2}.
   \caption{Data for polarization, part C.}
 \end{table}
 
-
 \section{Discussion \& Conclusion}
 
-% \printbibliography
+The first part of the experiment involves quite a few manual parts, which leads to errors. Having to find minimas manually introduces some errors. Measuring distance using a ruler is accurate enough for this experiment, but it could be improved by using a more precise tool.
+However, a bigger source of error is the horizontal movement of the receiver. The receiver is not fixed in place, so it moves perpendicular to the measurement axis, which introduces errors in the measurements. 
+
+In part B, the interference pattern is clear as Intensity drops to less than 1 percent of the initial value. However, it was noticed that there were some impurities inside the Perspex block, as the intensity was changing by moving the block.
+
+
+Part C of the experiment was almost a total failure due to extensive errors introduced by incompetent setup. It wasn't possible to fix the polarization plate relative to the reflector, and the distance between it varied between 3 and 5 centimeters which rendered this part obsolete.
+
+During all parts of the experiment, it was assumed refractive index of air is 1, and the Perspex block is uniform and in perfect shape. all of these assumptions introduce some errors, but they are negligible in this case.
+
+For parts A and B the results are mostly in line with the theory with some discrepancies. The wavelength of microwaves is found to be $\lambda = 2.925$ cm, which is approximately 2.8cm in theory. Also, the reflection was found to be $n = 1.59$, which is approximately 1.5 in theory. However, it was expected not to get any 0 intensity points in part C, which wasn't the case.  
+
+In general, the experiment was successful in calculating the wavelength of microwaves and refractive index of the Perspex block but failed to generate circularly polarized microwaves from a linearly polarized beam.
 
 \end{document}
