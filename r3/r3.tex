@@ -6,7 +6,9 @@
 
 % Default 
 \usepackage{graphicx}
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage[backend=biber,
+  style=numeric, 
+  sorting=none]{biblatex}
 
 % Additional
 \usepackage{amsmath}
@@ -16,11 +18,10 @@
 \usepackage{xcolor}
 \usepackage{placeins}
 \usepackage{todonotes}
-\usepackage{parskip}
+
 \newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small]{#1}}
 
 \addbibresource{references.bib}
-\everymath{\displaystyle}
 
 \title{Microwave Optics I} 
 \author{Rahmanyaz Annyyev, Hikmat Gulaliyev} 
@@ -31,19 +32,20 @@
 \maketitle
 
 \begin{abstract}
-  This microwave experiment delves into the properties of microwaves, exploring their kinship with light waves. Employing a transmitter and receiver, it tackles three fundamental questions. First, it investigates how to determine the wavelength of microwave radiation through analysis of a standing wave pattern. Second, the experiment explores how the speed of microwaves changes within a Perspex block compared to air. This is achieved by measuring the phase shift caused by the material's refractive index. Finally, the experiment investigates a method for generating circularly polarized microwaves from a linearly polarized beam. This is accomplished by manipulating the polarization of the transmitted wave and utilizing a reflecting metal plate with a polarization grid. By addressing these questions and providing methods for investigation, the experiment lays the groundwork for a deeper understanding of wave behavior. The experiment is mostly in line with theory, except for 3rd where there are discrepancies.
+In this experiment, we inquire into the wave nature of microwaves. It is divided into three parts, and in each part, we address a different question. First, we determine the wavelength of microwaves using the standing wave pattern. Second, we measure the speed of microwaves in a dielectric material. This is done by measuring the phase shift caused by the material's refractive index. Finally, we investigate a method for generating circularly polarized microwaves from a linearly polarized beam. This is accomplished by manipulating the polarization of the transmitted wave and utilizing a reflecting metal plate with a polarization grille. The results are mostly in line with the theory, except for the third part where there are discrepancies.
 \end{abstract}
 
 \section{Introduction}
 
 The electromagnetic spectrum is the range of all possible frequencies of electromagnetic radiation. The spectrum is divided into several regions, in order of decreasing frequency and increasing wavelength: gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, and radio waves. The microwave region of the electromagnetic spectrum is usually defined as being the range of frequencies from 1 GHz to 100 GHz. The wavelengths of microwaves are usually measured in centimeters. Microwaves are widely used in modern technology, for example in telecommunications, radar, and microwave ovens. The primary goal of this experiment is to verify the wave nature of microwaves.
 
-The experiment is divided into three parts: A, B, and C. The experimental setup is comprised of a microwave transmitter with a Gunn diode, a microwave receiver with a Schottky diode, a goniometer, three dielectric perspex blocks, a metal reflector, and a polarization grille.
+The experiment is divided into three parts: A, B, and C. The experimental setup is comprised of a microwave transmitter with a Gunn diode, a microwave receiver with a Schottky diode, a goniometer, three dielectric Perspex\textsuperscript{\textregistered} blocks, a metal reflector, and a polarization grille.
 
-Standing waves are a type of wave that occurs when two waves of the same frequency and amplitude travel in opposite directions and interfere with each other. They are characterized by nodes and antinodes. A node is a point on a standing wave where the wave has zero amplitude. An antinode is a point on a standing wave where the amplitude is at a maximum. The distance between two consecutive nodes or antinodes is equal to half the wavelength of the wave and is denoted by $\lambda/2$.
-
-In part A of the experiment, we employ this property of standing waves to measure the wavelength of microwaves. The experimental setup is shown in Figure~\ref{fig:1}.
-We use a microwave transmitter and receiver to detect the standing waves and then measure the distance between two consecutive antinodes to determine the wavelength of the microwaves.
+Standing waves are a type of wave that occurs when two waves of the same frequency and amplitude travel in opposite directions and interfere with each other. They are characterized by nodes and antinodes. A node is a point on a standing wave where the wave has zero amplitude. An antinode is a point on a standing wave where the amplitude is at a maximum. The distance between two consecutive nodes or antinodes is equal to half the wavelength of the wave and is denoted by $\lambda/2$. In part A of the experiment, we employ this property of standing waves to measure the wavelength of microwaves. The experimental setup is shown in Figure~\ref{fig:1}. We use a microwave transmitter and receiver to detect the standing waves and then measure the distance between two consecutive antinodes to determine the wavelength of the microwaves. The data is taken several times and the average value is found using the formula
+\begin{equation}\label{eq:average-wavelength}
+  \bar{\lambda} = 2 \frac{\sum\left|x_{i+1}-x_1\right|}{N-1},
+\end{equation}
+where $x_i$ is the distance between the $i$th antinode and the first antinode, and $N$ is the number of measurements.
 
 \begin{figure}[ht]
   \centering
@@ -52,11 +54,11 @@ We use a microwave transmitter and receiver to detect the standing waves and the
   \label{fig:1}
 \end{figure}
 
-The speed of electromagnetic wave propagation in vacuum is denoted by $c$ and is approximately $3 \times 10^8$ m/s. As the wave enters a dielectric material, the speed of propagation decreases. This is due to the interaction of the electromagnetic wave with the atoms and molecules of the material; the electric and magnetic fields of the wave cause the charges in the material to move, which in turn generates new electromagnetic waves. The superposition of the original wave and the new waves results in a decrease in the speed of propagation. The speed of propagation in a dielectric material is denoted by $v$ and is given by the equation
+The speed of electromagnetic wave propagation in vacuum is denoted by $c$ and is approximately $3 \times 10^8$ m/s. As the wave enters a dielectric material, the speed of propagation decreases. This is due to the interaction of the electromagnetic wave with the atoms and molecules of the material; the electric and magnetic fields of the wave cause the charges in the material to move, which in turn generates new electromagnetic waves. The superposition of the original wave and the new waves results in a decrease in the progression speed. The speed of propagation in a dielectric material is denoted by $v$ and is given by the equation
 \begin{equation}
   v = \frac{c}{n},
 \end{equation}
-where $n$ is the refractive index of the material. In part B of the experiment, we use a dielectric material to reduce the speed of propagation of microwaves and measure it. The setup is shown in Figure~\ref{fig:2}.
+where $n$ is the refractive index of the material. In part B of the experiment, we use a dielectric material to reduce the speed of propagation of microwaves and measure it. The setup is shown in Figure~\ref{fig:2}. In the 4\textsuperscript{th} configuration, there is a phase difference between the waves that affect the intensity. However, it is not equal to $\pi$, so there is no destructive interference. 
 
 \begin{figure}[ht]
   \centering
@@ -65,18 +67,18 @@ where $n$ is the refractive index of the material. In part B of the experiment, 
   \label{fig:2}
 \end{figure}
 
-The polarization of an electromagnetic wave is the orientation of the electric field vector. The polarization of a wave can be linear, circular, or elliptical. In part C of the experiment, we use a polarization grille to change the polarization of microwaves and measure the effect of the grille on the intensity of the microwaves. The setup is shown in Figure~\ref{fig:3}. In configuration 4 there is some interference present that affects the intensity, however, the phase shift isn't equal to $\pi$ so there is no complete destructive interference.
+The polarization of an electromagnetic wave is the orientation of the electric field vector. The polarization of a wave can be linear, circular, or elliptical. In part C of the experiment, we use a polarization grille to change the polarization of microwaves and measure the effect of the grille on the intensity of the microwaves. The setup is shown in Figure~\ref{fig:3}. 
 
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=0.6]{figures/f3.pdf}
-  \caption{Experimental setup for part B.}
+  \caption{Experimental setup for part C.}
   \label{fig:3}
 \end{figure}
 
 \section{Data \& Results}
 
-The results of part A are shown in Table~\ref{tab:1}. The average value of the wavelength of microwaves is found to be $\bar{\lambda} = 2 \frac{\sum\left|x_{i+1}-x_1\right|}{N-1} = 2.925$ cm. 
+The results of part A are shown in Table~\ref{tab:1}. Using Formula~\ref{eq:average-wavelength}, the average value of the wavelength of microwaves is found to be $\bar{\lambda} = 2.925$ cm.
 
 \begin{table}[ht]
   \label{tab:1}
@@ -95,14 +97,15 @@ The results of part A are shown in Table~\ref{tab:1}. The average value of the w
   \end{tblr}
   \caption{Data for standing waves, part A.}
 \end{table}
-In part B of the experiment, zero intensity was measured in configurations 1 and 2. The width of the perspex block is measured to be $w = 2.45$ cm. From these:
-\begin{gather}
-  \label{eq:1}
-  L(n-1) \cong \frac{\lambda}{2} \\ n \cong 1 + \frac{\lambda}{2L} \\ n = 1 + \frac{2.925}{2.45\cdot 2} = 1.59 
-\end{gather} 
-Using this value of $n$, the speed of microwaves in Perspex is found to be $v = \frac{c}{n} = \frac{3\times 10^8}{1.59} = 1.89\times 10^8$ m/s.
 
-In configurations 3 and 4 there was some drop in intensity. However, since in configuration 3 both parts of the wave pass through the block there wasn't any interference, but some phase shift.  
+In part B of the experiment, zero intensity was measured in configurations 1 and 2. The width of a single Perspex\textsuperscript{\textregistered} block is measured to be $w = 2.45$ cm. The refractive index is found the following way:
+\begin{align}
+  &L(n-1) \cong \frac{\lambda}{2}, \\ 
+  &n \cong 1 + \frac{\lambda}{2L}, \\ 
+  &n = 1 + \frac{2.925}{2.45\cdot 2} = 1.59.
+\end{align} 
+Using this value of $n$, the speed of microwaves in Perspex\textsuperscript{\textregistered} is found to be $v = \frac{c}{n} = \frac{3\times 10^8}{1.59} = 1.89\times 10^8$ m/s. In configurations 3 and 4, there was a drop in intensity. However, since in configuration 3 both parts of the wave pass through the block there wasn't any interference, but some phase shift.  
+
 The results of part C are shown in Table~\ref{tab:2}.
 
 \begin{table}[ht]
@@ -126,18 +129,6 @@ The results of part C are shown in Table~\ref{tab:2}.
 
 \section{Discussion \& Conclusion}
 
-The first part of the experiment involves quite a few manual parts, which leads to errors. Having to find minimas manually introduces some errors. Measuring distance using a ruler is accurate enough for this experiment, but it could be improved by using a more precise tool.
-However, a bigger source of error is the horizontal movement of the receiver. The receiver is not fixed in place, so it moves perpendicular to the measurement axis, which introduces errors in the measurements. 
-
-In part B, the interference pattern is clear as Intensity drops to less than 1 percent of the initial value. However, it was noticed that there were some impurities inside the Perspex block, as the intensity was changing by moving the block.
-
-
-Part C of the experiment was almost a total failure due to extensive errors introduced by incompetent setup. It wasn't possible to fix the polarization plate relative to the reflector, and the distance between it varied between 3 and 5 centimeters which rendered this part obsolete.
-
-During all parts of the experiment, it was assumed refractive index of air is 1, and the Perspex block is uniform and in perfect shape. all of these assumptions introduce some errors, but they are negligible in this case.
-
-For parts A and B the results are mostly in line with the theory with some discrepancies. The wavelength of microwaves is found to be $\lambda = 2.925$ cm, which is approximately 2.8cm in theory. Also, the reflection was found to be $n = 1.59$, which is approximately 1.5 in theory. However, it was expected not to get any 0 intensity points in part C, which wasn't the case.  
-
-In general, the experiment was successful in calculating the wavelength of microwaves and refractive index of the Perspex block but failed to generate circularly polarized microwaves from a linearly polarized beam.
+There are several sources of error in part A of the experiment. First, the manual measurement of the distance between antinodes. Second, the use of a ruler to measure the distance. A more precise tool could be used to reduce this error. Third, the horizontal movement of the receiver. The receiver is not fixed in place, so it moves perpendicular to the measurement axis, which introduces errors in the measurements. In part B, the interference pattern is clear as the intensity drops to less than 1 percent of the initial value. However, the Perspex\textsuperscript{\textregistered} blocks have some impurities inside, which change the intensity by moving them. In part C, extensive errors were introduced by unsteady setup. The polarization plate was not fixed relative to the reflector, and the distance between it varied between 3 and 5 centimeters. This issue rendered this part of the experiment unsuccessful. Throughout the experiment, it was assumed that the refractive index of air is 1, and the Perspex\textsuperscript{\textregistered} blocks are uniform and in perfect shape. These assumptions introduce some errors, but they are negligible in this case. In parts A and B, the results are mostly in line with the theory with slight discrepancies. The wavelength of microwaves is found to be $\lambda = 2.925$ cm, and the theoretical value is approximately 2.8cm. The reflection was found to be $n = 1.59$, and the theoretical value is approximately 1.5. It was expected to not get any zero intensity points in part C, which wasn't the case. In general, the experiment was successful in calculating the wavelength of microwaves and refractive index of the Perspex\textsuperscript{\textregistered} blocks but failed to generate circularly polarized microwaves from a linearly polarized beam.
 
 \end{document}
