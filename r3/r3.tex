@@ -37,11 +37,11 @@ In this experiment, we inquire into the wave nature of microwaves. It is divided
 
 \section{Introduction}
 
-The electromagnetic spectrum is the range of all possible frequencies of electromagnetic radiation. The spectrum is divided into several regions, in order of decreasing frequency and increasing wavelength: gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, and radio waves. The microwave region of the electromagnetic spectrum is usually defined as being the range of frequencies from 1 GHz to 100 GHz. The wavelengths of microwaves are usually measured in centimeters. Microwaves are widely used in modern technology, for example in telecommunications, radar, and microwave ovens. The primary goal of this experiment is to verify the wave nature of microwaves.
+The electromagnetic spectrum is the range of all possible frequencies of electromagnetic radiation. The spectrum is divided into several regions, in order of decreasing frequency and increasing wavelength: gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, and radio waves. The microwave region of the electromagnetic spectrum is usually defined as being the range of frequencies from 1 GHz to 100 GHz. The wavelengths of microwaves are usually measured in centimeters. Microwaves are widely used in modern technology, for example in telecommunications, radar, and microwave ovens. The primary goal of this experiment is to verify the wave nature of microwaves \cite{Giancoli_2020}.
 
 The experiment is divided into three parts: A, B, and C. The experimental setup is comprised of a microwave transmitter with a Gunn diode, a microwave receiver with a Schottky diode, a goniometer, three dielectric Perspex\textsuperscript{\textregistered} blocks, a metal reflector, and a polarization grille.
 
-Standing waves are a type of wave that occurs when two waves of the same frequency and amplitude travel in opposite directions and interfere with each other. They are characterized by nodes and antinodes. A node is a point on a standing wave where the wave has zero amplitude. An antinode is a point on a standing wave where the amplitude is at a maximum. The distance between two consecutive nodes or antinodes is equal to half the wavelength of the wave and is denoted by $\lambda/2$. In part A of the experiment, we employ this property of standing waves to measure the wavelength of microwaves. The experimental setup is shown in Figure~\ref{fig:1}. We use a microwave transmitter and receiver to detect the standing waves and then measure the distance between two consecutive antinodes to determine the wavelength of the microwaves. The data is taken several times and the average value is found using the formula
+Standing waves are a type of wave that occurs when two waves of the same frequency and amplitude travel in opposite directions and interfere with each other. They are characterized by nodes and antinodes. A node is a point on a standing wave where the wave has zero amplitude. An antinode is a point on a standing wave where the amplitude is at a maximum. The distance between two consecutive nodes or antinodes is equal to half the wavelength of the wave and is denoted by $\lambda/2$ \cite{Sears_&_Zemansky_2013}. In part A of the experiment, we employ this property of standing waves to measure the wavelength of microwaves. The experimental setup is shown in Figure~\ref{fig:1}. We use a microwave transmitter and receiver to detect the standing waves and then measure the distance between two consecutive antinodes to determine the wavelength of the microwaves. The data is taken several times and the average value is found using the formula
 \begin{equation}\label{eq:average-wavelength}
   \bar{\lambda} = 2 \frac{\sum\left|x_{i+1}-x_1\right|}{N-1},
 \end{equation}
@@ -98,15 +98,15 @@ The results of part A are shown in Table~\ref{tab:1}. Using Formula~\ref{eq:aver
   \caption{Data for standing waves, part A.}
 \end{table}
 
-In part B of the experiment, zero intensity was measured in configurations 1 and 2. The width of a single Perspex\textsuperscript{\textregistered} block is measured to be $w = 2.45$ cm. The refractive index is found the following way:
+In part B of the experiment, zero intensity was measured in configurations 1 and 2. The width of a single Perspex\textsuperscript{\textregistered} block is measured to be $L = 2.45$ cm. The refractive index is found the following way:
 \begin{align}
-  &L(n-1) \cong \frac{\lambda}{2}, \\ 
-  &n \cong 1 + \frac{\lambda}{2L}, \\ 
-  &n = 1 + \frac{2.925}{2.45\cdot 2} = 1.59.
+  &L(n-1) \cong \dfrac{\lambda}{2}, \\ 
+  &n \cong 1 + \dfrac{\lambda}{2L}, \\ 
+  &n = 1 + \dfrac{2.925}{2 \cdot 2.45} = 1.59.
 \end{align} 
 Using this value of $n$, the speed of microwaves in Perspex\textsuperscript{\textregistered} is found to be $v = \frac{c}{n} = \frac{3\times 10^8}{1.59} = 1.89\times 10^8$ m/s. In configurations 3 and 4, there was a drop in intensity. However, since in configuration 3 both parts of the wave pass through the block there wasn't any interference, but some phase shift.  
 
-The results of part C are shown in Table~\ref{tab:2}.
+The results of part C are shown in Table~\ref{tab:2}. The "All" means that the intensity was the same for all settings.
 
 \begin{table}[ht]
   \label{tab:2}
@@ -130,5 +130,7 @@ The results of part C are shown in Table~\ref{tab:2}.
 \section{Discussion \& Conclusion}
 
 There are several sources of error in part A of the experiment. First, the manual measurement of the distance between antinodes. Second, the use of a ruler to measure the distance. A more precise tool could be used to reduce this error. Third, the horizontal movement of the receiver. The receiver is not fixed in place, so it moves perpendicular to the measurement axis, which introduces errors in the measurements. In part B, the interference pattern is clear as the intensity drops to less than 1 percent of the initial value. However, the Perspex\textsuperscript{\textregistered} blocks have some impurities inside, which change the intensity by moving them. In part C, extensive errors were introduced by unsteady setup. The polarization plate was not fixed relative to the reflector, and the distance between it varied between 3 and 5 centimeters. This issue rendered this part of the experiment unsuccessful. Throughout the experiment, it was assumed that the refractive index of air is 1, and the Perspex\textsuperscript{\textregistered} blocks are uniform and in perfect shape. These assumptions introduce some errors, but they are negligible in this case. In parts A and B, the results are mostly in line with the theory with slight discrepancies. The wavelength of microwaves is found to be $\lambda = 2.925$ cm, and the theoretical value is approximately 2.8cm. The reflection was found to be $n = 1.59$, and the theoretical value is approximately 1.5. It was expected to not get any zero intensity points in part C, which wasn't the case. In general, the experiment was successful in calculating the wavelength of microwaves and refractive index of the Perspex\textsuperscript{\textregistered} blocks but failed to generate circularly polarized microwaves from a linearly polarized beam.
+
+\printbibliography
 
 \end{document}
