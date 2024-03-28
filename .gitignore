@@ -63,7 +63,7 @@ acs-*.bib
 
 # changes
 *.soc
-
+*.json
 # comment
 *.cut
 
