@@ -1,0 +1,141 @@
+\documentclass[10pt]{article}
+
+%------------------------------------------------------
+%   PACKAGES
+%------------------------------------------------------
+
+% Default 
+\usepackage{graphicx}
+\usepackage[backend=biber,
+  style=numeric, 
+  sorting=none]{biblatex}
+
+% Additional
+\usepackage{amsmath}
+\usepackage{textcomp, gensymb}
+\usepackage{placeins}
+\usepackage{tabularray} 
+\usepackage{xcolor}
+\usepackage{placeins}
+\usepackage{todonotes}
+
+\newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small]{#1}}
+
+\addbibresource{references.bib}
+
+\title{Thin Lens} 
+\author{Rahmanyaz Annyyev, Hikmat Gulaliyev}
+\date{29 March 2024} 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+
+
+The experiment is comprised of three parts: A, B, and C. The experimental setup is comprised of a $150$ mm converging lens, a $75$ mm diverging lens, a light source, a crossed arrow target that represents an object, and a screen on which the image is formed.
+
+In part A, we will employ the thin lens equation to determine the focal length of the converging lens. The setup is shown in Figure~. First...
+
+In part B, we will use the Bessel method to determine the focal length of the converging lens. The setup is shown in Figure~. First...
+
+In part C, we will use the virtual object method to determine the focal length of the diverging lens. The setup is shown in Figure~. First...
+
+\section{Discussion \& Conclusion}
+
+\section{Data \& Results}
+
+The results of part A are shown in Table~\ref{tab:1}. 
+
+\begin{table}[ht]
+  \label{tab:1}
+  \centering
+  \vspace{4mm}
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    row{odd} = {bg = lightgray!5},
+    row{1} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {},
+    cell{5}{2}={c=2}{c},
+    cell{6}{2}={c=2}{c}
+  }
+    $s_{\text{o}}$ (cm) & $s_\text{{i}}$ (cm) & Focal length, $f_{\text{m}}$ (cm) \\
+    \hline
+    -- & -- & -- \\
+    -- & -- & -- \\
+    -- & -- & -- \\
+    \hline
+    Average focal length, $\bar{f}$ (cm) & Error, $\Delta \bar{f}$ (cm) & \\
+    -- & -- \\ 
+  \end{tblr}
+  \caption{Results of part A of the experiment.}
+\end{table}
+
+The results of part B are shown in Table~\ref{tab:2}.
+
+\begin{table}[ht]
+  \label{tab:2}
+  \centering
+  \vspace{4mm}
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    row{odd} = {bg = lightgray!5},
+    row{1} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {},
+    cell{5}{2}={c=2}{c},
+    cell{6}{2}={c=2}{c}
+  }
+    $d$ (cm) & $D$ (cm) & Focal length, $f_{\text{m}}$ (cm) \\
+    \hline
+    -- & -- & -- \\
+    -- & -- & -- \\
+    -- & -- & -- \\
+    \hline
+    Average focal length, $\bar{f}$ (cm) & Error, $\Delta \bar{f}$ (cm) & \\
+    -- & -- \\ 
+  \end{tblr}
+  \caption{Results of part B of the experiment.}
+\end{table}
+
+The results of part C are shown in Table~\ref{tab:3}.
+
+\begin{table}[ht]
+  \label{tab:3}
+  \centering
+  \vspace{4mm}
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    row{odd} = {bg = lightgray!5},
+    row{1} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {},
+    cell{5}{2}={c=3}{c},
+    cell{6}{2}={c=3}{c}
+  }
+    $s_{\text{i}}$ & $s'_{\text{i}}$ (cm) & d (cm) & Focal length, $f_{\text{m}}$ (cm) \\
+    \hline
+    -- & -- & -- \\
+    -- & -- & -- \\
+    -- & -- & -- \\
+    \hline
+    Average focal length, $\bar{f}$ (cm) & Error, $\Delta \bar{f}$ (cm) & \\
+    -- & -- \\ 
+  \end{tblr}
+  \caption{Results of part C of the experiment.}
+\end{table}
+
+\section{Extra credit}
+
+Lenses are a ubiquitous part of our daily lives. They are used in cameras, microscopes, telescopes, and many other devices. In this experiment, we have learned how to determine the focal length of a lens using the thin lens equation, the Bessel method, and the virtual object method. We have also learned how to calculate the magnification of a lens.
+
+\printbibliography
+
+\end{document}
