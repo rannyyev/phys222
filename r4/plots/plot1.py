@@ -43,5 +43,7 @@ plt.grid()
 plt.legend()
 plt.title("Plot of angle versus concentration")
 
-plt.savefig("f2.png", dpi=300)
+print(m, b)
+
+# plt.savefig("f2.png", dpi=300)
 # plt.show()
