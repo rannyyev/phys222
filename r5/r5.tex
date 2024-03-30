@@ -1,9 +1,5 @@
 \documentclass[10pt]{article}
 
-%------------------------------------------------------
-%   PACKAGES
-%------------------------------------------------------
-
 % Default 
 \usepackage{graphicx}
 \usepackage[backend=biber,
@@ -17,8 +13,8 @@
 \usepackage{tabularray} 
 \usepackage{xcolor}
 \usepackage{placeins}
-\usepackage{csquotes}
-\usepackage{todonotes}
+\usepackage{csquotes} 
+\usepackage{todonotes} 
 
 \newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small, inline]{#1}}
 
@@ -33,10 +29,12 @@
 \maketitle
 
 \begin{abstract}
-
+\td{Write the abstract. Don't forget to comment on the results and conclusions of the experiment. Try to hit the 200-word mark. Consult the introduction for the necessary information.}
 \end{abstract}
 
 \section{Introduction}
+
+\td{Take a glance at the introduction and fix mistakes if there are any. Maybe you can add some information.}
 
 In the most general sense, a \textbf{lens} is a refracting body that redirects the light rays passing through it. It either focuses or diverges the light rays, depending on the shape of the lens. A simple lens consists of a single piece of transparent material, whereas a compound lens consists of several simple lenses, called \textit{elements}, usually arranged along a common axis. Lenses are usually made of glass or plastic and are comprised of two surfaces, one or both of which are curved. The main purpose of a lens is to form an image of an object. The image can be real or virtual, depending on the position of the object relative to the lens. A real image is formed when the light rays converge at a point, whereas a virtual image is formed when the light rays diverge from a point \cite{Giancoli_2014}. 
 
@@ -63,7 +61,15 @@ where $f$ is the focal length of the lens, $s_{\text{o}}$ is the object distance
 
 Lenses are divided into two categories: thin lenses and thick lenses. A thin lens is a lens whose thickness is negligible compared to the radii of curvature of the lens surfaces. A thick lens is a lens whose thickness is not negligible compared to the radii of curvature of the lens surfaces. This division depends on a given problem and the accuracy required \cite{Hecht_2017}. 
 
-The experiment consists of three parts: A, B, and C. The experimental setup is comprised of a $150$ mm converging lens, a $75$ mm diverging lens, a light source, a crossed arrow target that represents an object, and a screen on which the image is formed. The lenses will be assumed to be thin lenses.
+The experiment consists of three parts: A, B, and C. The experimental setup is comprised of a $15$ cm converging lens, a $7.5$ cm diverging lens, a light source, a crossed arrow target that represents an object, and a screen on which the image is formed. The lenses will be assumed to be thin lenses. In each part of the experiment, we calculate the average focal length, $\bar{f}$, of the lens and the error, $\Delta \bar{f}$, in the measurement. The former is calculated using the formula
+\begin{equation}
+  \bar{f} = \dfrac{1}{n} \sum_{m=1}^{n} f_{m},
+\end{equation}
+where $n$ is the number of measurements and $f_{m}$ is the focal length of the lens in the $m$th measurement. The error is calculated using the formula
+\begin{equation}
+  \Delta \bar{f} = \sqrt{\dfrac{\sum_{m=1}^{n} (f_m - \bar{f})^2}{n-1}},
+\end{equation}
+where $f_m$ is the focal length of the lens in the $m$th measurement. The error is a measure of the uncertainty in the measurement of the focal length of the lens.
 
 \subsection*{Part A}
 
@@ -89,15 +95,40 @@ In part B, we will use the Bessel method to determine the focal length of the co
 \begin{equation}
   f = \dfrac{D^2 - d^2}{4D},
 \end{equation}
-where $f$ is the focal length of the lens, $D$ is the distance between the two positions of the screen, and $d$ is the distance between the two positions of the lens. First, we place the converging lens on the optical bench such that the object distance, $s_{\text{o}}$, is at least four times the estimated focal length of the lens. Next, we determine two positions of the lens that produce a sharp image of the object on the screen. We measure the distance between the two positions of the lens, $d$, and the distance between the two positions of the screen, $D$. We repeat this process two more times with different object distances.
+where $f$ is the focal length of the lens, $D$ is the distance between the two positions of the screen, and $d$ is the distance between the two positions of the lens. Let's derive this formula before proceeding with the methodological explanation. Consider Figure~\ref{fig:4}. The object is placed at a distance $s_{\text{o}}$ from the lens. The image is formed at a distance $s_{\text{i}}$ from the lens. 
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.5]{figures/f5.pdf}
+  \caption{The derivation of the Bessel method formula.}
+  \label{fig:5}
+\end{figure}
+
+Let's denote the distance between the object and the image as $D = s_{\text{i}} + s_{\text{o}}$. The distance between the two positions of the lens is $d$. Then, $s_{\text{o}} = D - s_{\text{i}}$. If we substitute this into the thin lens equation, we get
+\begin{equation}
+  \dfrac{1}{f} = \dfrac{1}{D - s_{\text{i}}} + \dfrac{1}{s_{\text{i}}}.
+\end{equation}
+If we simplify this equation, we get
+\begin{equation}
+  s_{\text{i}}^2 - Ds_{\text{i}} + fD = 0.
+\end{equation}
+The discriminant of this equation is given by
+\begin{equation}
+  \Delta = D^2 - 4fD,
+\end{equation}
+and the focal length of the lens is given by
+\begin{equation}
+  f = \dfrac{D^2 - d^2}{4D}.
+\end{equation}
+Let's return to the experiment. First, we place the converging lens on the optical bench such that the object distance, $s_{\text{o}}$, is at least four times the estimated focal length of the lens. Next, we determine two positions of the lens that produce a sharp image of the object on the screen. We measure the distance between the two positions of the lens, $d$, and the distance between the two positions of the screen, $D$. We repeat this process two more times with different object distances.
 
 \subsection*{Part C}
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[scale=0.5]{figures/f5.pdf}
+  \includegraphics[scale=0.5]{figures/f6.pdf}
   \caption{The experimental setup of part C.}
-  \label{fig:5}
+  \label{fig:6}
 \end{figure}
 
 In part C, we will use the virtual object method to determine the focal length of the diverging lens. The setup is shown in Figure~\ref{fig:5}. It is not possible to directly measure the focal length of a diverging lens using the previous methods because the image formed by a diverging lens is always virtual. In the virtual object method, we use a converging lens to create a real image of the object, which then serves as a virtual object for the diverging lens. The converging lens should be sufficiently \enquote{strong} to satisfy the condition 
@@ -116,7 +147,7 @@ where $f$ is the focal length of the diverging lens, $s_{\text{i}}$ is the dista
 
 \subsection*{Part A}
 
-The results of part A are shown in Table~\ref{tab:1}. 
+The results of part A are shown in Table~\ref{tab:1}. The average focal length of the converging lens is $7.50$ cm with an error of $0.13$ cm. It is within the limits of error of the actual focal length of the lens, which is $7.5$ cm.
 
 \begin{table}[ht]
   \centering
@@ -145,7 +176,10 @@ The results of part A are shown in Table~\ref{tab:1}.
 
 \subsection*{Part B}
 
-The results of part B are shown in Table~\ref{tab:2}.
+\td{There is a question asked in the lab manual: \enquote{How well do your values for the average focal length obtained in Part A and Part B agree 
+with each other and the manufacturer's specifications? Discuss any discrepancies.} Try to expand on this question.}
+
+The results of part B are shown in Table~\ref{tab:2}. The average focal length of the converging lens is $7.28$ cm with an error of $0.02$ cm. It is not within the limits of error of the actual focal length of the lens, which is $7.5$ cm. The average value of the focal length in part A and part do not agree with each other within the limits of error. This discrepancy may be due to the limitations of the experimental setup, such as the accuracy of the measurements and the alignment of the lenses. Since the sharpness of the image is subjective, different people may have different opinions about what constitutes a sharp image. This can lead to variations in the measurements of the object and image distances. 
 
 \begin{table}[ht]
   \centering
@@ -203,7 +237,7 @@ The results of part C are shown in Table~\ref{tab:3}. The average focal length o
 
 \section{Extra credit}
 
-\td{Write a comprehensive essay on the applications of lenses in various fields. Use at least two references because I believe we will not be granted any extra credit points if we do not use references. Please don't use non-scientific sources.}
+\td{Write a comprehensive essay on the applications of lenses in various fields. Use at least two references because I believe we will not be granted any extra credit points if we do not use references. Please don't use non-scientific sources. Let's get a perfect score on this experiment.}
 
 Lenses are a ubiquitous part of our daily lives. They are used in cameras, microscopes, telescopes, and many other devices. In this experiment, we have learned how to determine the focal length of a lens using the thin lens equation, the Bessel method, and the virtual object method. We have also learned how to calculate the magnification of a lens.
 
