@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+
+% Default 
+\usepackage{graphicx}
+\usepackage[backend=biber,
+  style=numeric, 
+  sorting=none]{biblatex}
+
+% Additional
+\usepackage{amsmath}
+\usepackage{textcomp, gensymb}
+\usepackage{placeins}
+\usepackage{tabularray} 
+\usepackage{xcolor}
+\usepackage{placeins}
+\usepackage{csquotes} 
+\usepackage{todonotes} 
+
+\newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small, inline]{#1}}
+
+\addbibresource{references.bib}
+
+\title{Grating Spectrometer} 
+\author{Rahmanyaz Annyyev, Hikmat Gulaliyev}
+\date{27 April 2024} 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+One of the most common in optical spectroscopy is the grating spectrometer. The grating spectrometer is an instrument comprised of reflecting or transmitting elements separated by a distance comparable to the wavelength of light under consideration. Some examples of gratings include a pattern of transparent slits (or apertures) in an opaque screen or a collection of grooves on a substrate. The main purpose of the grating spectrometer is to disperse light into its constituent wavelengths. Upon incidence, the light is diffracted in multiple directions. The angle of diffraction depends on the wavelength of the light and the spacing of the grating. After diffraction, the light waves interfere with each other, producing a pattern of bright and dark spots. The bright spots correspond to constructive interference, while the dark spots correspond to destructive interference. 
+
+
+To find the percentage error between the calculated and literature values of the wavelengths, we use the formula
+\begin{equation}
+  \text{Percentage error} = \left| \frac{\lambda_{\text{c}} - \lambda_{\text{l}}}{\lambda_{\text{l}}} \right| \times 100 \%
+\end{equation}
+where $\lambda_{\text{c}}$ is the calculated wavelength and $\lambda_{\text{l}}$ is the literature value of the wavelength.
+
+\section{Data \& Results}
+
+\begin{table}[ht]
+  \label{tab:1}
+  \centering
+  \vspace{4mm}
+  \footnotesize
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    row{odd} = {bg = lightgray!5},
+    row{1} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {},
+    cell{1}{1}={c=3}{l},
+    cell{1}{4}={c=4}{l}
+  }
+    Gas discharge lamp = Mercury & & & Grating spacing ($d$) = 600 lines/mm & & & \\
+    Color & {$\theta \degree$ \\ (Clock. rot.)} & {$\theta \degree$ \\ (Coun.-clock. rot.)} & {$\theta \degree$ \\ (Average)} & {$\lambda$ nm \\ (Calc.)} & {$\lambda$ nm \\ (Lit.)} & {\% \\ error} \\
+    \hline 
+    Violet & $14\degree 23'$ & $14\degree 30'$ & $14\degree 26'$ & 415.4 & 404.6 & 2.676 \\
+    Violet & $14\degree$ & $14\degree 50'$ & $14\degree 25'$ & 415.0 & 407.8 & 1.765 \\
+    Blue & $15\degree$ & $15\degree 30'$ & $15\degree 15'$ & 438.4 & 435.8 & 0.595 \\
+    Blue-green & $17\degree 2'$ & $17\degree 35'$ & $17\degree 18'$ & 495.6 & 491.6 & 0.814 \\
+    Green & $18\degree 20'$ & $18\degree 40'$ & $18\degree 30'$ & 528.8 & 546.1 & 3.169 \\
+    Orange & $20\degree'$ & $21\degree 39'$ & $20\degree 49'$ & 592.3 & 577.0 & 2.649 \\
+    Orange & $20\degree 10'$ & $21\degree 58'$ & $21\degree 4'$ & 599.1  & 579.1 & 3.454 \\
+  \end{tblr}
+  \caption{Results of the grating spectrometer experiment.}
+\end{table}
+
+\section{Extra credit}
+
+
+
+% \printbibliography
+
+\end{document}
