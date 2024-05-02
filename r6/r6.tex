@@ -15,6 +15,7 @@
 \usepackage{placeins}
 \usepackage{csquotes} 
 \usepackage{todonotes} 
+\usepackage{hyperref}
 
 \newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small, inline]{#1}}
 
@@ -28,10 +29,10 @@
 
 \maketitle
 
-\td{I guess writing data is obsolete since git already saves data and time for every commit but we can still write it if you want so.}
-
 \begin{abstract}
-  In this experiment, a grating spectrometer, an optical device similar to a prism that separates light into its constituent wavelengths, was used to measure the spectral lines of a Mercury gas discharge lamp. A collimator with a slit produces a parallel beam of light, that falls on the grating which consists of a large number of evenly and nearly placed narrow slits. As the light passes through the grating, it is diffracted in multiple directions, producing a pattern of bright and dark spots. The bright spots correspond to constructive interference, while the dark spots correspond to destructive interference. The angle of diffraction depends on the wavelength of the light and the spacing of the grating. The light is then focused by a telescope, and the spectral lines are observed. The angle of rotation of the grating is measured for each spectral line, and the wavelength of the light is calculated. Results show that the calculated wavelengths are in good agreement with the literature values.
+
+In this experiment, a grating spectrometer, an optical device similar to a prism that separates light into its constituent wavelengths, was used to measure the spectral lines of a Mercury gas discharge lamp. A collimator with a slit produces a parallel beam of light, that falls on the grating which consists of a large number of evenly and nearly placed narrow slits. As the light passes through the grating, it is diffracted in multiple directions, producing a pattern of bright and dark spots. The bright spots correspond to constructive interference, while the dark spots correspond to destructive interference. The angle of diffraction depends on the wavelength of the light and the spacing of the grating. The light is then focused by a telescope, and the spectral lines are observed. The angle of rotation of the grating is measured for each spectral line, and the wavelength of the light is calculated. Results show that the calculated wavelengths are in good agreement with the literature values.
+
 \end{abstract}
 
 \section{Introduction}
@@ -61,11 +62,9 @@ The experimental setup is comprised of a Mercury gas discharge lamp, a collimato
 
 \subsection*{Procedure}
 
-\td{I guess reason for high similarity in last one was us being literally last person to submit it. so i guess no need to worry that much and its gonna be aight.}
+First, the Mercury gas discharge lamp is placed in front of the collimator and turned on for ten minutes to allow the lamp to reach a constant temperature. A small rectangle of light should be seen through the collimator. Next, the spectrometer is adjusted so that the collimator produces a parallel beam of light and the telescope receives it in the same way. Then the eyepiece of the telescope is adjusted for optimal focus based on the individual's eyesight. Next, the grating is placed on the rotating grating table and the table is rotated until the first-order spectrum is seen. The height of the table is adjusted so that the full width of the collimated beam is incident on the grating without any blockage. The telescope is then rotated until the first-order spectrum is seen. 
 
-First, the Mercury gas discharge lamp is placed in front of the collimator and turned on for ten minutes to allow the lamp to reach a constant temperature. A small rectangle of light should be seen through the collimator. Next, the spectrometer is adjusted so that the collimator produces a parallel beam of light and the telescope receives it in the same way. Then the eyepiece of the telescope is adjusted for optimal focus based on individual's eyesight. Next, the grating is placed on the rotating grating table and the table is rotated until the first order spectrum is seen. The height of the table is adjusted so that the full width of the collimated beam is incident on the grating without any blockage. The telescope is then rotated until the first order spectrum is seen. 
-
-Next, the table is rotated until the plane of the grating is perpendicular to the collimated beam, ensuring the ruled lines face the telescope. When looked through the telescope, a sharp image of the slit should be seen in the center of the field of view (this is the zero order spectrum). Then, rotate the table to determine number of visible orders. Realign the telescope arm of the spectrometer with the collimator arm. The image of the slit should be seen once again in the center of the field of view. Next, the cross hair should be aligned with the center of the slit and the angle of rotation should be recorded. If the zero order is not observed precisely at $0\degree$, the subsequent measurements should be corrected by the same amount.
+Next, the table is rotated until the plane of the grating is perpendicular to the collimated beam, ensuring the ruled lines face the telescope. When looking through the telescope, a sharp image of the slit should be seen in the center of the field of view (this is the zero-order spectrum). Then, rotate the table to determine the number of visible orders. Realign the telescope arm of the spectrometer with the collimator arm. The image of the slit should be seen once again in the center of the field of view. Next, the cross-hair should be aligned with the center of the slit and the angle of rotation should be recorded. If the zero order is not observed precisely at $0\degree$, the subsequent measurements should be corrected by the same amount.
 
 The telescope should be rotated slowly until a series of spectral lines are seen. The angle of rotation should be recorded for each color. Finally, the process should be repeated for the opposite direction of rotation.
 
@@ -103,19 +102,19 @@ The telescope should be rotated slowly until a series of spectral lines are seen
 \end{table}
 
 \section{Discussion \& Conclusion}
-\td{Everything looks lowk good. Idk you can improve or add some shit.}
+
 \subsection*{Errors}
 
 The sources of error in the experiment include calibration error, instrument resolution and imperfection, human error, spectral overlap, and external factors.
 
 \begin{itemize}
-  \item \textbf{Calibration error:} The spectrometer may not have been calibrated precisely enough to ensure parallel beams of light. Since the calibration of the spectrometer was done by eye, without the aid of precise instruments, it may have lead to systematic errors in the measurements since it relies on subjective judgement of the observer. Furthermore, the grating may not have been placed on the rotating table precisely enough to ensure that the ruled lines face the telescope, leading to errors in the measurements.
+  \item \textbf{Calibration error:} The spectrometer may not have been calibrated precisely enough to ensure parallel beams of light. Since the calibration of the spectrometer was done by eye, without the aid of precise instruments, it may have led to systematic errors in the measurements since it relies on the subjective judgment of the observer. Furthermore, the grating may not have been placed on the rotating table precisely enough to ensure that the ruled lines face the telescope, leading to errors in the measurements.
   
-  \item \textbf{Instrument resolution and imperfection:} The instrumental resolution of the spectrometer, determined by factors such as the slit width and the optical design, can limit the ability to resolve closely spaced spectral features, leading to errors in peak identification and intensity measurement. Imperfections in the grating, such as scratches or dust, can also affect the diffraction pattern and lead to errors in the measurements. Futhermore, the telescope may have imperfections that affect the reception of light.
+  \item \textbf{Instrument resolution and imperfection:} The instrumental resolution of the spectrometer, determined by factors such as the slit width and the optical design, can limit the ability to resolve closely spaced spectral features, leading to errors in peak identification and intensity measurement. Imperfections in the grating, such as scratches or dust, can also affect the diffraction pattern and lead to errors in the measurements. Furthermore, the telescope may have imperfections that affect the reception of light.
   
   \item \textbf{Human error:} The angle of rotation was measured by eye, which may have introduced errors in the measurements. Furthermore, a vernier scale was used to measure the angle of rotation, which may have introduced both parallax and reading errors. 
   
-  \item \textbf{Spectral overlap:} The spectral lines may have overlapped, making it difficult to distinguish between them and leading to errors in the measurements. Furthermore, since spectrum is continuous, it is difficult to determine the exact wavelength of a spectral line, leading to errors in the measurements. This is especially true for lines that are close together, such as the blue and blue-green spectral lines.
+  \item \textbf{Spectral overlap:} The spectral lines may have overlapped, making it difficult to distinguish between them and leading to errors in the measurements. Furthermore, since the spectrum is continuous, it is difficult to determine the exact wavelength of a spectral line, leading to errors in the measurements. This is especially true for lines that are close together, such as the blue and blue-green spectral lines.
   
   \item \textbf{External factors:} External factors such as ambient light, temperature, and humidity can affect the measurements by introducing noise and errors. 
 \end{itemize}
@@ -130,17 +129,14 @@ The discrepancies between the calculated and literature values of the wavelength
 
 \subsection*{Conclusion}
 
-In conclusion, despite analog nature of experiment, sources of error and approximations experiment was succesfull and the calculated wavelengths were in good agreement with the literature values. The grating spectrometer is a powerful tool for measuring the wavelengths of spectral lines and can be used in a wide range of applications.
+In conclusion, despite the analog nature of the experiment, sources of error and approximations experiment was successful and the calculated wavelengths were in good agreement with the literature values. The grating spectrometer is a powerful tool for measuring the wavelengths of spectral lines and can be used in a wide range of applications.
 
 \section{Extra Credit}
 
-\td{They can see if they want to if you make this repo public in the future.}
 Diffraction grating is a method used in spectroscopy, a measurement technique that studies the interaction between matter and light at different wavelengths.  
-spectroscopy can be used from astronomy to biology, and from chemistry to physics. Some of more interesting uses of spectroscopy include the study of the composition of stars.
-Since each element emits light at specific wavelengths, or has a unique fingerprint, spectroscopy can be used to determine the composition of stars by analyzing the light they emit. This can provide information about the temperature, density, and composition of stars, as well as their age and distance from Earth \cite{article}.
+spectroscopy can be used from astronomy to biology, and from chemistry to physics. Some of the more interesting uses of spectroscopy include the study of the composition of stars.
+Since each element emits light at specific wavelengths or has a unique fingerprint, spectroscopy can be used to determine the composition of stars by analyzing the light they emit. This can provide information about the temperature, density, and composition of stars, as well as their age and distance from Earth \cite{Banerjee_2022}.
 
 \printbibliography
-
-\td{Add more references!}
 
 \end{document}
