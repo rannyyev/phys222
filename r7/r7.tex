@@ -31,13 +31,13 @@
 \maketitle
 
 \begin{abstract}
-  In this experiment, the Michelson interferometer was used to dive into the concept of wave interference. The interferometer splits a laser beam into two coherent beams and later recombines them after reflecting from mirrors to create an interference pattern on the screen. By adjusting one of the mirrors, we can change the path of one beam, and therefore observe variations in the pattern as destructive and constructive interferences occur.
+In this experiment, the Michelson interferometer was used to dive into the concept of wave interference. The interferometer splits a laser beam into two coherent beams and later recombines them after reflecting from mirrors to create an interference pattern on the screen. By adjusting one of the mirrors, we can change the path of one beam, and therefore observe variations in the pattern as destructive and constructive interferences occur.
 
-  The experiment consists of two parts where first one focuses on measuring the wavelength of laser light. This was achieved by counting the number of fringe cycles as the mirror position changed precisely, which in combination with the known relationship between phase shift and path difference allows for accurate results.
-  
-  The second part of the experiment was dedicated to measuring the refractive index of air. By adding a variable-pressure vacuum chamber to the setup, we can mimic the role of the change in the optical path we gained from mirror movement in the previous part. Similarly, by observing fringe cycles, we can find the refractive index of air. 
+The experiment consists of two parts where first one focuses on measuring the wavelength of laser light. This was achieved by counting the number of fringe cycles as the mirror position changed precisely, which in combination with the known relationship between phase shift and path difference allows for accurate results.
 
-  The results of the experiment were found to be in good agreement with the theoretical values, although fringe patterns weren't perfectly circular and fully observable.
+The second part of the experiment was dedicated to measuring the refractive index of air. By adding a variable-pressure vacuum chamber to the setup, we can mimic the role of the change in the optical path we gained from mirror movement in the previous part. Similarly, by observing fringe cycles, we can find the refractive index of air. 
+
+The results of the experiment were found to be in good agreement with the theoretical values, although fringe patterns weren't perfectly circular and fully observable.
 \end{abstract}
 
 \section{Introduction}
@@ -46,7 +46,7 @@
 
 One of the methods of producing interference patterns is amplitude division. In this method, a beam of light is divided into two beams, and the two beams are recombined to produce interference fringes. A Michelson interferometer is an instrument that employs this mechanism.
 
-A Michelson interferometer is an instrument used in optical interferometry. Minimally, it consists of two mirrors $M_1$ and $M_2$ and a beam splitter $M$ (although a diffraction grating can be used). The setup is shown in Figure \ref{fig:1}. The beam splitter, in our case, is a plate beamsplitter with a partially reflective coating. A source of light, $S$, a laser in our case, is directed at the beam splitter, and the light is split into two beams of coherent light at point $C$. One beam is reflected toward fixed mirror $M_1$, and the other one is transmitted toward adjustable mirror $M_2$. The beams are reflected by the mirrors and recombined at the beam splitter at point $C'$. They then travel to a viewing screen where the interference pattern is observed (although a photoelectric detector or a camera can be used) \cite{Hecht_2017}.
+A Michelson interferometer is an instrument used in optical interferometry. Minimally, it consists of two mirrors $M_1$ and $M_2$ and a beam splitter $M$ (although a diffraction grating can be used). The setup is shown in Figure~(\ref{fig:1}). The beam splitter, in our case, is a plate beamsplitter with a partially reflective coating. A source of light, $S$, a laser in our case, is directed at the beam splitter, and the light is split into two beams of coherent light at point $C$. One beam is reflected toward fixed mirror $M_1$, and the other one is transmitted toward adjustable mirror $M_2$. The beams are reflected by the mirrors and recombined at the beam splitter at point $C'$. They then travel to a viewing screen where the interference pattern is observed (although a photoelectric detector or a camera can be used) \cite{Hecht_2017}.
 
 \begin{figure}[hbt!]
   \centering
@@ -94,7 +94,7 @@ where $n_{\text{atm}}$ is the refractive index of the air at atmospheric pressur
 
 \subsection*{Part A}
 
-The data obtained in the first part of the experiment is shown in Table (\ref{tab:1}). The average wavelength of the light produced by the He-Ne laser is calculated using Equation (\ref{eq:1}). It is assumed that the refractive index of air is $n = 1$. The average wavelength is calculated using the formula
+The data obtained in the first part of the experiment is shown in Table~(\ref{tab:1}). The average wavelength of the light produced by the He-Ne laser is calculated using Equation (\ref{eq:1}). It is assumed that the refractive index of air is $n = 1$. The average wavelength is calculated using the formula
 \begin{equation}
   \bar{\lambda} = \dfrac{\sum_{i=1}^{n} \lambda_i}{n}
   \label{eq:3}
@@ -134,11 +134,13 @@ where $n$ is the number of measurements. The wavelength of the light produced by
 
 The value of the wavelength of the light produced by the He-Ne laser is found to be $\lambda = 675.3 \pm 8.4$ nm. The value is not in agreement with the accepted value of the wavelength of the light produced by a He-Ne laser, which is $\lambda = 632.8$ nm. The discrepancy could be due to errors in the measurements, the assumptions made in the calculations, or the approximations made in the experiment.
 
-\td{Questions 4 and 5.}
+If we examine Figure~(\ref{fig:1}), we can see that the light beam that propagates toward the mirror $M_2$ passes through the beam splitter twice, but the light beam that propagates toward the mirror $M_1$ passes through the beam splitter only once. Therefore, the light beam that travels toward the mirror $M_2$ travels a longer optical distance than the light beam that travels toward the mirror $M_1$, and a phase shift between the two light beams occurs.
+
+Since it is a requirement for both of the light beams to travel the same optical distance and have the same phase, a compensating plate of a certain thickness and refractive index could have been inserted into the path of the light beam that travels toward the mirror $M_1$ to compensate for the phase shift and obtain more accurate results.
 
 \subsection*{Part B}
 
-The data obtained in the second part of the experiment is shown in Table (\ref{tab:2}). The refractive index of air is calculated using Equation (\ref{eq:2}). The thickness of the chamber was found to be $3.3$ cm. The average refractive index of air is calculated using the formula
+The data obtained in the second part of the experiment is shown in Table~(\ref{tab:2}). The refractive index of air is calculated using Equation (\ref{eq:2}). The thickness of the chamber was found to be $3.3$ cm. The average refractive index of air is calculated using the formula
 \begin{equation}
   \bar{n}_{\text{air}} = \dfrac{\sum_{i=1}^{n} n_{\text{air}_i}}{n}
   \label{eq:5}
@@ -175,8 +177,6 @@ where $n$ is the number of measurements. The refractive index of air is found to
 
 According to Mathar (2007), the refractive index of air is $n = 1.00027270$, which indicates that the measurement we obtained is ever so slightly higher than the actual value \cite{Mathar_2007}. The discrepancy could be due to errors in the measurements, the assumptions made in the calculations, or the approximations made in the experiment. 
 
-\td{Question 3.}
-
 \section{Discussion \& Conclusion}
 
 \subsection*{Errors}
@@ -188,6 +188,7 @@ The sources of error in this experiment include alignment error, human error, im
   \item \textbf{Human error:} The measurements of the number of fringes that pass a point on the screen may not be accurate since the fringes were counted manually. 
   \item \textbf{Imperfect instrumentation:} The beam splitter may have not split the light evenly and the lens may have not been perfectly transparent, which could have affected the interference pattern. The mirrors may not have been perfectly reflective, which could have caused the light to be absorbed or scattered.
   \item \textbf{External factors:} The temperature of the air in the chamber may not have been constant, which could have affected the refractive index of the air. Vibrations, air currents, and other external factors could have affected the path length of the light, leading to phase shifts and errors in the measurements. 
+  \item \textbf{Absence of compensating plate:} The absence of a compensating plate could have caused a phase shift between the two light beams, leading to errors in the measurements.
 \end{itemize}
 
 \subsection*{Approximations}
@@ -207,7 +208,7 @@ The sources of error in this experiment include alignment error, human error, im
 
 \subsection*{Discrepancies}
 
-The discrepancies found in part A of the experiment for the values of the wavelength of the light can be explained by above mentioned errors and approximations. Difference between the measured and accepted values of the wavelength is around 7\%, which doesn't fall within the error margin of the experiment. The discrepancies found in part B of the experiment for the values of the refractive index of air can be explained by the same reasons. Measured value however is in great agreement with the theoretical value. 
+The discrepancies found in part A of the experiment for the values of the wavelength of the light can be explained by above mentioned errors and approximations. The difference between the measured and accepted values of the wavelength is around 7\%, which doesn't fall within the error margin of the experiment. The discrepancies found in part B of the experiment for the values of the refractive index of air can be explained by the same reasons. Measured value however is in great agreement with the theoretical value. 
 \subsection*{Conclusion}
 
 In conclusion, the Michelson interferometer is a powerful tool for analyzing the wave properties of light. Despite the high error in part A, the experiment can be considered successful considering the difficulties in aligning and calibrating the interferometer. The refractive index of air was found to be in good agreement with the theoretical value. This value not only confirms the previous assumptions of the refracting index of air being extremely close to 1 but also proves that the Michelson interferometer can be used to measure the refractive index of a medium.   
@@ -218,7 +219,7 @@ The Michelson interferometer was invented by an American physicist Albert Michel
 
 The version used in this experiment is a simple version of the Michelson interferometer. There are more complex versions of the Michelson interferometer, such as the Twyman-Green interferometer, the Fabry-Perot interferometer, and the Mach-Zehnder interferometer. These interferometers are used in more advanced experiments and applications.
 
-One such amazing application is Helioseismic Magnetic Imager (HMI)\cite{hmi} which is a part of the Solar Dynamics Observatory (SDO) mission. HMI uses a Michelson interferometer to measure the velocity and magnetic field of the Sun's photosphere. The data obtained from HMI is used to study the solar cycle, solar flares, and other solar phenomena.
+One such amazing application is the Helioseismic Magnetic Imager (HMI), which is a part of the Solar Dynamics Observatory (SDO) mission. HMI uses a Michelson interferometer to measure the velocity and magnetic field of the Sun's photosphere. The data obtained from HMI is used to study the solar cycle, solar flares, and other solar phenomena \cite{Scherrer_2011}.
 
 \printbibliography
 
