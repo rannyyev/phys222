@@ -1,0 +1,108 @@
+\documentclass[10pt]{article}
+
+% Default 
+\usepackage{graphicx}
+\usepackage[
+  backend=biber,
+  style=numeric, 
+  sorting=none
+]{biblatex}
+
+% Additional
+\usepackage{amsmath}
+\usepackage{textcomp, gensymb}
+\usepackage{placeins}
+\usepackage{tabularray} 
+\usepackage{xcolor}
+\usepackage{placeins}
+\usepackage{csquotes} 
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{siunitx}
+
+\newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small, inline]{#1}}
+
+\addbibresource{references.bib}
+
+\title{Microwave Optics 2} 
+\author{Rahmanyaz Annyyev, Hikmat Gulaliyev}
+\date{9 May, 2024} 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+\subsection*{General}
+
+\subsection*{Procedure}
+
+\subsubsection*{Part A}
+
+\subsubsection*{Part B}
+
+\section{Data \& Results}
+
+\subsection*{Part A}
+
+\begin{table}[ht]
+  \centering
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    row{odd} = {bg = lightgray!5},
+    row{1} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {}
+  }
+    Angle & {Clockwise \\ Int. Read.} & {Counter. \\ Int. Read.} & Angle & {Clockwise \\ Int. Read.} & {Counter. \\ Int. Read.} \\
+    \hline 
+    0\degree & 0 & 0 & 45\degree & 0 & 0 \\
+    5\degree & 0 & 0 & 50\degree & 0 & 0 \\
+    10\degree & 0 & 0 & 55\degree & 0 & 0 \\
+    15\degree & 0 & 0 & 60\degree & 0 & 0 \\
+    20\degree & 0 & 0 & 65\degree & 0 & 0 \\
+    25\degree & 0 & 0 & 70\degree & 0 & 0 \\
+    30\degree & 0 & 0 & 75\degree & 0 & 0 \\
+    35\degree & 0 & 0 & 80\degree & 0 & 0 \\
+    40\degree & 0 & 0 & 85\degree & 0 & 0 \\
+  \end{tblr}
+  \caption{Results of the first part of the experiment.}
+  \label{tab:1}
+\end{table}
+
+\subsection*{Part B}
+
+\begin{table}[ht]
+  \centering
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    column{1} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {}
+  }
+    {Reflector Pos. \\ for Max. (or Min.)} & & & & & & & 
+  \end{tblr}
+  \caption{Results of the second part of the experiment.}
+  \label{tab:2}
+\end{table}
+
+\section{Discussion \& Conclusion}
+
+\subsection*{Errors}
+
+\subsection*{Approximations}
+
+\subsection*{Discrepancies}
+
+\subsection*{Conclusion} 
+
+\section{Extra Credit}
+
+% \printbibliography
+
+\end{document}
