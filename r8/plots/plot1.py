@@ -63,10 +63,12 @@ for i in range(len(angles)):
         sincx.append(np.sin(f * np.radians(angles[i])) / (f * np.radians(angles[i])))
 
 print(len(intensities), len(angles))
-plt.plot(angles, intensitiesaverage, label="average")
+plt.plot(angles, intensitiesaverage, label="Input Data")
+plt.plot(angles, sincx, label="Sinc(x)")
+plt.legend()
 grid = plt.grid(True)
 plt.xlabel("Angle (degrees)")
 plt.ylabel("Intensity")
+plt.title("Intensity vs Angle Best Fit")
 
-plt.savefig("f1.png", dpi=300)
-plt.show()
+plt.savefig("r8/plots/plot3.png")
