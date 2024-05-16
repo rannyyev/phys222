@@ -24,4 +24,4 @@ plt.legend(loc="upper left")
 plt.grid(True)
 
 print(m, b)
-plt.savefig("p1.png", dpi=300)
+# plt.savefig("p1.png", dpi=300)
