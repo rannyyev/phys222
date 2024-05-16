@@ -10,7 +10,8 @@
 
 % Additional
 \usepackage{amsmath}
-\usepackage{textcomp, gensymb}
+\usepackage{textcomp}
+\usepackage{gensymb}
 \usepackage{placeins}
 \usepackage{tabularray} 
 \usepackage{xcolor}
@@ -37,6 +38,8 @@ In this experiment, the validity of Fresnel's equations is tested by measuring t
 \end{abstract}
 
 \section{Introduction}
+
+\subsection*{General}
 
 When electromagnetic radiation strikes an interface between two different optical media, a fraction of the radiation is reflected and the rest is transmitted. Fresnel's equations, or coefficients of reflection and transmission, quantitatively describe the behavior of light at the interface between two media. 
 
@@ -84,8 +87,6 @@ At a certain angle of incidence, known as the Brewster angle, the reflection coe
   \theta_B = {\arctan}{\left(\frac{n_t}{n_i}\right)}
 \end{equation}
 
-\subsection*{General}
-
 \subsection*{Procedure} 
 
 The setup consists of an optical bench, two polarizers, an angular translator, a light-sensitive detector, a laser, a slit collimator, an interface, and a square analyzer.
@@ -98,11 +99,11 @@ After mounting polarizers on and setting the angle of polarizer $\#2$ to $45\deg
 
 We can now put the cylindrical lens on the pivot plate and align it with the angular translator and pivot plane so that the flat surface faces the laser beam. Rotating the plates will now result in reflection and refraction at the dielectric interface that is formed between air and the flat surface.
 
-Now we can set the incident angle at different values by turning the angular translator, and find the refraction angle by again rotating the angular translator so that intensity is maximum. After noting the angle at Table 1. We can put in the square analyzer to also record horizontal and vertical components of light. Also by finding points where horizontal intensity is zero we can find Brewster's angle.
+Now we can set the incident angle at different values by turning the angular translator, and find the refraction angle by again rotating the angular translator so that intensity is maximum. After noting the angle at Table 1. We can put in the square analyzer to also record horizontal and vertical components of light. Also by finding points where horizontal intensity is zero, we can find Brewster's angle.
  
 \section{Data \& Results}
 
-The refractive index of the cylindrical block was found to be $n_t = 1.30$. Therefore, the Brewster angle was calculated to be $52.4\degree$.
+From the slope of the best-fit line in Figure~(\ref{fig:f1}), the refractive index of the cylindrical block is calculated to be $1.30$. The Brewster angle is calculated to be $52.4\degree$.
 
 \begin{table}[ht]
   \centering
@@ -115,17 +116,16 @@ The refractive index of the cylindrical block was found to be $n_t = 1.30$. Ther
     $\theta_i$ & $20\degree$ & $30\degree$ & $40\degree$ & $50\degree$ & $60\degree$ & $70\degree$ & $80\degree$ \\
     $\theta_t$ & $7\degree$ & $10\degree$ & $14\degree$ & $18\degree$ & $23\degree$ & $30\degree$ & $37\degree$ 
   \end{tblr}
-  \caption{Results of the second part of the experiment.}
+  \caption{Incident and transmission angles.}
   \label{tab:1}
 \end{table}
 
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.7]{plots/p1.png}
-  \caption{The experimental setup.}
+  \caption{Plot of $\sin(\theta_i)$ vs. $\sin(\theta_t)$ and the linear fit.}
   \label{fig:f1}
 \end{figure}
-
 
 \begin{table}[ht]
   \centering
@@ -139,7 +139,7 @@ The refractive index of the cylindrical block was found to be $n_t = 1.30$. Ther
     $\theta_i$ & $20\degree$ & $25\degree$ & $30\degree$ & $35\degree$ & $40\degree$ & $45\degree$ & $50\degree$ & $55\degree$ & $60\degree$ & $65\degree$ & $70\degree$ & $75\degree$ & $80\degree$ \\
     $I(\theta_i)_\parallel$ & $33$ & $22$ & $25$ & $25$ & $19$ & $17$ & $9$ & $6$ & $3$ & $6$ & $5$ & $4$ & $3$ \\
   \end{tblr}
-  \caption{Results of the second part of the experiment.}
+  \caption{Reflection intensities for p-polarization.}
   \label{tab:2}
 \end{table}
 
@@ -155,18 +155,25 @@ The refractive index of the cylindrical block was found to be $n_t = 1.30$. Ther
     $\theta_i$ & $20\degree$ & $25\degree$ & $30\degree$ & $35\degree$ & $40\degree$ & $45\degree$ & $50\degree$ & $55\degree$ & $60\degree$ & $65\degree$ & $70\degree$ & $75\degree$ & $80\degree$ \\
     $I(\theta_i)_\perp$ & $33$ & $22$ & $25$ & $25$ & $19$ & $17$ & $9$ & $6$ & $3$ & $6$ & $5$ & $4$ & $3$ \\
   \end{tblr}
-  \caption{Results of the second part of the experiment.}
+  \caption{Reflection intensities for s-polarization.}
   \label{tab:3}
 \end{table}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.7]{plots/p2.png}
+  \caption{Plot of $\left(I_{\parallel}/I_{\perp}\right)^2$ vs. $\theta_i$.}
+  \label{fig:f2}
+\end{figure}
 
 \section{Discussion \& Conclusion}
 
 \subsection*{Errors}
-The sources of error for this experiment are calibration error, human error, imperfect instrumentation.
+The sources of error for this experiment are calibration error, human error, and imperfect instrumentation.
 \begin{itemize}
-  \item \textbf{Calibration error:} Calibration of light sensor was unsuccessful at times, as intensity was shooting over $100\%$ meaning we got out of detection range. also the calibration of laser into aperture was done by hand and it was not always falling directly into the aperture which affected intensity measurements.
-  \item \textbf{Humans error:} All measurements, alignments and finding angles were done by hand, therefore they may be not accurate.
-  \item \textbf{Imperfect Instrumentation:} Therefore the biggest point of error was imperfect instrumentation as plates were moving relative to each other while moving the the angular translator. Therefore changing incident, and reflection angles, affecting intensities immensely. 
+  \item \textbf{Calibration error:} Calibration of the light sensor was unsuccessful at times, as the intensity was exceeding $100\%$, causing the readings to go out of the detection range. Additionally, the calibration of the laser into the aperture was done by hand, and it did not always fall directly into the aperture, which affected intensity measurements.
+  \item \textbf{Human error:} All measurements, alignments, and angle determinations were done by hand, and therefore may not be accurate.
+  \item \textbf{Imperfect instrumentation:} The biggest source of error was imperfect instrumentation. The plates were moving relative to each other while using the angular translator, which changed the incident and reflection angles, thereby affecting intensities immensely.
 \end{itemize}
 
 \subsection*{Approximations}
