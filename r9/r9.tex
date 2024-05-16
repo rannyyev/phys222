@@ -38,6 +38,52 @@
 
 \section{Introduction}
 
+When electromagnetic radiation strikes an interface between two different optical media, a fraction of the radiation is reflected and the rest is transmitted. Fresnel's equations, or coefficients of reflection and transmission, quantitatively describe the behavior of light at the interface between two media. 
+
+The amplitude reflection coefficient, denoted by $r$, is the ratio of the reflected wave's amplitude to the incident wave's amplitude. The amplitude transmission coefficient, denoted by $t$, is the ratio of the transmitted wave's amplitude to the incident wave's amplitude. They are given by the following equations:
+\begin{equation}
+  r = \frac{E_{0r}}{E_{0i}} \quad \text{and} \quad t = \frac{E_{0t}}{E_{0i}}
+\end{equation}
+where $E_{0r}$, $E_{0i}$, and $E_{0t}$ are the amplitudes of the reflected, incident, and transmitted waves, respectively.
+
+These coefficients are derived from the boundary conditions of the electric and magnetic fields at the interface between the two media. The values of the coefficients depend on the angle of incidence, the refractive indices of the two media, and most importantly, the polarization of the incident light. Let the refractive indices of the incident and transmitted media be $n_i$ and $n_t$, respectively, and let the angle of incidence, reflectance, and transmittance be $\theta_i$, $\theta_r$, and $\theta_t$, respectively \cite{Pedrotti_2006}.
+
+There are two types of polarization: s-polarization and p-polarization. In s-polarization, the electric field vector is perpendicular to the plane of incidence, and the coefficients are given by the following equations:
+\begin{equation}
+  r_{\perp} \equiv \left(\frac{E_{0r}}{E_{0i}}\right)_{\perp} = \frac{n_i \cos(\theta_i) - n_t \cos(\theta_t)}{n_i \cos(\theta_i) + n_t \cos(\theta_t)}
+\end{equation}
+and
+\begin{equation}
+  t_{\perp} \equiv \left(\frac{E_{0t}}{E_{0i}}\right)_{\perp} = \frac{2n_i \cos(\theta_i)}{n_i \cos(\theta_i) + n_t \cos(\theta_t)}
+\end{equation}
+where the subscripts $\perp$ denote s-polarization. In p-polarization, the electric field vector is parallel to the plane of incidence, and the coefficients are given by the following equations:
+\begin{equation}
+  r_{\parallel} \equiv \left(\frac{E_{0r}}{E_{0i}}\right)_{\parallel} = \frac{n_t \cos(\theta_i) - n_i \cos(\theta_t)}{n_t \cos(\theta_i) + n_i \cos(\theta_t)}
+\end{equation}
+and
+\begin{equation}
+  t_{\parallel} \equiv \left(\frac{E_{0t}}{E_{0i}}\right)_{\parallel} = \frac{2n_i \cos(\theta_i)}{n_t \cos(\theta_i) + n_i \cos(\theta_t)}
+\end{equation}
+where the subscripts $\parallel$ denote p-polarization \cite{Hecht_2017}.
+
+The angles of incidence and transmission are related by Snell's law, which states that the refractive indices of the two media and the sines of the angles of incidence and transmission are related by the following equation:
+\begin{equation}
+  n_i \sin(\theta_i) = n_t \sin(\theta_t)
+\end{equation}
+By performing a series of algebraic manipulations, the reflection coefficients can be brought into the following forms:
+\begin{equation}
+  r_{\perp} = -\frac{\sin(\theta_i - \theta_t)}{\sin(\theta_i + \theta_t)}
+\end{equation}
+and 
+\begin{equation}
+  r_{\parallel} = \frac{\tan(\theta_i - \theta_t)}{\tan(\theta_i + \theta_t)}
+\end{equation}
+
+At a certain angle of incidence, known as the Brewster angle, the reflection coefficient for p-polarization becomes zero. This angle is given by the following equation:
+\begin{equation}
+  \theta_B = {\arctan}{\left(\frac{n_t}{n_i}\right)}
+\end{equation}
+
 \subsection*{General}
 
 \subsection*{Procedure} 
@@ -56,9 +102,20 @@ Now we can set incident angle at different values by turning the angular transla
 Now, we can 
 \section{Data \& Results}
 
-\subsection*{Part A}
-
-\subsection*{Part B}
+\begin{table}[ht]
+  \centering
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    column{1-2} = {bg = lightgray!20},
+    hlines = {},
+    vlines = {}
+  }
+    $\theta_i$ & $20\degree$ & $30\degree$ & $40\degree$ & $50\degree$ & $60\degree$ & $70\degree$ & $80\degree$ \\
+    $\theta_t$ & $7\degree$ & $10\degree$ & $14\degree$ & $18\degree$ & $23\degree$ & $30\degree$ & $37\degree$ 
+  \end{tblr}
+  \caption{Results of the second part of the experiment.}
+  \label{tab:1}
+\end{table}
 
 \section{Discussion \& Conclusion}
 
