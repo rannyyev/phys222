@@ -23,14 +23,23 @@ r_perpendicular = [
 
 y_theoretical = [(r_parallel[i] / r_perpendicular[i]) ** 2 for i in range(len(theta_i))]
 y_exp = [(I_parallel_exp[i] / I_perpendicular_exp[i]) for i in range(len(theta_i_exp))]
-plt.plot(theta_i, y_theoretical, "ro", label="Theoretical data")
+plt.plot(
+    theta_i,
+    y_theoretical,
+    "ro",
+    label=r"$\left(r_{\parallel}/r_{\perp}\right)^2$ (theoretical data)",
+)
 plt.plot(theta_i, y_theoretical, "r")
-plt.plot(theta_i_exp, y_exp, "bo", label=r"$\left(I_{\parallel}/I_{\perp}$")
+plt.plot(
+    theta_i_exp, y_exp, "bo", label=r"$I_{\parallel}/I_{\perp}$ (experimental data)"
+)
 plt.plot(theta_i_exp, y_exp, "b")
 plt.xlabel(r"$\theta_i$ (degrees)")
-plt.ylabel(r"$\left(I_{\parallel}/I_{\perp}$")
-plt.title(r"Plot of $\left(I_{\parallel}/I_{\perp}\right)^2$ vs. $\theta_i$")
+# plt.ylabel()
+plt.title(
+    r"Plot of $\left(r_{\parallel}/r_{\perp}\right)^2$ and $I_{\parallel}/I_{\perp}$ vs $\theta_i$"
+)
 plt.legend(loc="upper right")
 plt.grid(True)
-plt.show()
-# plt.savefig("p2.png")
+# plt.show()
+plt.savefig("p2.png")

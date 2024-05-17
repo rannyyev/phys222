@@ -16,12 +16,12 @@ plt.scatter(sin_theta_t, sin_theta_i, label="Data", marker="o")
 
 m, b = np.polyfit(sin_theta_t, sin_theta_i, deg=1)
 
-plt.axline(xy1=(0, b), slope=m, color="green", label="Best fit", linestyle="--")
+plt.axline(xy1=(0, b), slope=m, color="green", label="Best fit line", linestyle="--")
 plt.xlabel(r"$\sin(\theta_t)$")
 plt.ylabel(r"$\sin(\theta_i)$")
-plt.title(r"Plot of $\sin(\theta_i)$ vs. $\sin(\theta_t)$")
+plt.title(r"Plot of $\sin(\theta_i)$ vs. $\sin(\theta_t)$ and best fit line")
 plt.legend(loc="upper left")
 plt.grid(True)
 
-print(m, b)
+# print(m, b)
 plt.savefig("p1.png", dpi=300)
