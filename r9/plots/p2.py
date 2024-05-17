@@ -37,7 +37,7 @@ plt.plot(theta_i_exp, y_exp, "b")
 plt.xlabel(r"$\theta_i$ (degrees)")
 # plt.ylabel()
 plt.title(
-    r"Plot of $\left(r_{\parallel}/r_{\perp}\right)^2$ and $I_{\parallel}/I_{\perp}$ vs $\theta_i$"
+    r"Plot of $\left(r_{\parallel}/r_{\perp}\right)^2$ and $I_{\parallel}/I_{\perp}$ vs. $\theta_i$"
 )
 plt.legend(loc="upper right")
 plt.grid(True)
