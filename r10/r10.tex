@@ -1,0 +1,138 @@
+\documentclass[10pt]{article}
+
+% Default 
+\usepackage{graphicx}
+\usepackage[
+  backend=biber,
+  style=numeric, 
+  sorting=none
+]{biblatex}
+
+% Additional
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{placeins}
+\usepackage{tabularray} 
+\usepackage{xcolor}
+\usepackage{placeins}
+\usepackage{csquotes} 
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{siunitx}
+
+\newcommand{\td}[1]{\todo[linecolor=blue, backgroundcolor=blue!25,bordercolor=blue, size=\small, inline]{#1}}
+
+\addbibresource{references.bib}
+
+\title{Diffraction and Interference} 
+\author{Rahmanyaz Annyyev, Hikmat Gulaliyev}
+\date{23 May, 2024} 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+\subsection*{General}
+
+\subsection*{Procedure} 
+
+The experiment is comprised of two parts: part A and part B. The setup consists of a diode laser, a light sensor, a linear translator, single and double-slit disks, a rotary motion sensor, and an aperture bracket.
+
+\subsubsection*{Part A}
+
+The purpose of part A is to compute the wavelength of the laser light using a single-slit disk.
+
+First, we set up the components for the Fraunhofer diffraction pattern. The light sensor is placed on the aperture bracket, which is then mounted on the linear translator. The single-slit disk is placed in front of the laser; both are placed at a certain distance from the light sensor. The whole setup is placed on an optical bench.
+
+Next, the laser is turned on, and the disk is rotated until the slit pattern is in line with the beam of the laser. If necessary, the adjustment screws on the back of the laser may be used to align the beam with the slit. 
+
+Then, the pulley on top of the rotary motion sensor is rotated to move the sensor along the linear translator until a diffraction pattern appears on the white screen attached to the aperture bracket. 
+
+After the pattern is visible, we have to ensure that it is horizontal and centered on the screen. The screws on the slit accessory can be used to obtain the desired pattern, and the accessory may be rotated to adjust the pattern's orientation.
+
+Next, the aperture disk attached in front of the bracket is rotated to block ambient light and to ensure that the sensor is between maxima of the diffraction pattern. For the best results, the narrowest slit should be used.
+
+Then, the light sensor is moved along the linear translator to align the center of the diffraction pattern with the slit on the aperture disk. The height of the sensor may be adjusted using the rod clamp on the rotary motion sensor.
+
+Thereafter, the PASCO{\textsuperscript\textregistered} data logger is used to record the intensity of the light at different positions along the linear translator. The vertical axis of the graph should be set to the intensity of the light (light sensor output), and the horizontal axis should be set to the position of the sensor (rotary motion sensor output).
+
+The procedure is repeated for different slit widths, and the data is recorded for each slit width in the corresponding table.
+
+\subsubsection*{Part B}
+
+The purpose of part B is to compute the wavelength of the laser light using a double-slit disk. The procedure is the same as in part A.
+
+\section{Data \& Results}
+
+\subsection*{Part A}
+
+\begin{table}[ht]
+  \centering
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    column{1} = {halign = l},
+    row{odd} = {bg = lightgray!5},
+    hlines = {},
+    vlines = {}
+  }
+    Pattern & A & B & C \\
+    \hline 
+    Width of the slit, $a$ (\si{\mm}) & 0.16 & 0.008 & 0.04 \\
+    Distance from the slit to the screen, $L$ (\si{cm}) & 84.5 & 84.5 & 84.5 \\
+    Average distance between minima, $\bar{y}$ (\si{cm}) \\
+    $\bar{\lambda} = a\bar{y}/L$ (\si{nm}) \\
+    Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) \\
+    Error $\Delta \lambda$ in $\bar{\lambda} = a \Delta y / L$ (\si{nm}) \\
+    $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) \\
+  \end{tblr}
+  \caption{Results of the first part of the experiment.}
+  \label{tab:1}
+\end{table}
+
+\subsection*{Part B}
+
+\begin{table}[ht]
+  \centering
+  \begin{tblr}{
+    cells = {halign = c, valign = m},
+    column{1} = {halign = l},
+    row{odd} = {bg = lightgray!5},
+    hlines = {},
+    vlines = {}
+  }
+    Pattern & D & E & F \\
+    \hline 
+    Width of the slit, $a$ (\si{\mm}) & 0.5 & 0.025 & 0.0125 \\
+    Distance from the slit to the screen, $L$ (\si{cm}) & 84.5 & 84.5 & 84.5 \\
+    Average distance between minima, $\bar{y}$ (\si{cm}) \\
+    $\bar{\lambda} = d\bar{y}/L$ (\si{nm}) \\
+    Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) \\
+    Error $\Delta \lambda$ in $\bar{\lambda} = d \Delta y / L$ (\si{nm}) \\
+    $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) \\
+  \end{tblr}
+  \caption{Results of the second part of the experiment.}
+  \label{tab:2}
+\end{table}
+
+\section{Discussion \& Conclusion}
+
+\subsection*{Errors}
+
+\subsection*{Approximations}
+
+\subsection*{diskrepancies}
+
+\subsection*{Conclusion} 
+
+\section{Extra Credit}
+
+% \printbibliography
+
+\end{document}
