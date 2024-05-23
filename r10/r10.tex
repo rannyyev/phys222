@@ -43,7 +43,66 @@ The primary goal of this experiment is to examine the interference and diffracti
 
 \subsection*{General}
 
-The wave theory of light posits that light is a wave, and as such, it exhibits wave-like properties. When light passes through a small aperture, it diffracts, creating a pattern of light and dark regions on a screen. This pattern is known as a diffraction pattern. When light passes through two or more slits, it interferes, creating a pattern of light and dark regions on a screen. This pattern is known as an interference pattern.
+The history bears witness to the fact that the nature of light has been a subject of debate for centuries. The wave theory of light, which posits that light is a wave, was first proposed by Christiaan Huygens in the 17th century. This theory was later supported by Thomas Young's double-slit experiment in the early 19th century. The wave theory of light was further developed by James Clerk Maxwell in the 19th century, who showed that light is an electromagnetic wave. The wave theory of light has been confirmed by numerous experiments, including the diffraction and interference of light.
+
+Interference is a phenomenon that occurs when two or more coherent waves overlap. Coherent waves are waves that have the same frequency, wavelength, and constant relative phase. When coherent waves overlap, they interfere constructively or destructively, creating a pattern of light and dark regions on a screen. This pattern is known as an interference pattern.
+
+Diffraction is a phenomenon similar to interference that occurs when light passes through a small aperture with dimensions on the order of the wavelength of light. When light passes through a small aperture, it diffracts, that is, it bends and spreads out in all directions. This creates a pattern of light and dark regions on a screen. This pattern is known as a diffraction pattern.
+
+Both interference and diffraction can be explained by the Huygens-Fresnel principle, which states that each point on a wavefront acts as a source of secondary spherical wavelets. The interference of these secondary wavelets produces the diffraction and interference patterns observed in experiments.
+
+The relative distances between the light source, the aperture, and the screen determine whether the diffraction pattern is in the near field or the far field. In the near field, the diffraction pattern is complex and varies with distance, and it is called the Fresnel diffraction pattern. In the far field, the diffraction pattern is simpler and does not vary with distance, since the secondary wavelets are approximately plane waves, and it is called the Fraunhofer diffraction pattern.
+
+\subsubsection*{Single-Slit Diffraction}
+
+The intensity of the light in the Fraunhofer diffraction pattern produced by a single slit is given by the equation
+\begin{equation}
+  I(\theta) = I_0 \left( \frac{\sin(\alpha)}{\alpha} \right)^2
+  \label{eq:single-slit-intensity}
+\end{equation}
+where
+\begin{equation}
+  \alpha = \frac{\pi a \sin(\theta)}{\lambda}
+\end{equation}
+and $I_0$ is the intensity of the light at the center of the pattern, $a$ is the width of the slit, $\theta$ is the observation angle, and $\lambda$ is the wavelength of the light. The zeros of the diffraction pattern occur at those angles where $\sin(\alpha) = 0$, that is, at
+\begin{equation}
+  \sin(\theta) = \frac{n \lambda}{a} \quad \text{for} \quad n = \pm 1, \pm 2, \pm 3, \ldots
+\end{equation}
+One of our assumptions is that the width of the slit is much smaller than the distance from the slit to the screen, that is, $a \ll L$. In this case, $\sin(\theta) \approx \tan(\theta) = y/L$, where $y$ is the distance from the center of the pattern to the $n$th minimum. Therefore, the wavelength of the light can be computed using the equation
+\begin{equation}
+  \lambda = \frac{a \bar{y}}{L}
+\end{equation}
+where $\bar{y}$ is the average distance between adjacent minima. 
+
+\subsubsection*{Double-Slit Interference}
+
+The intensity of the light in the Fraunhofer diffraction pattern produced by a double slit is when ignoring the effect of the slits is given by the equation
+\begin{equation}
+  I(\theta) = 4 I_0 \cos^2(\beta)
+  \label{eq:double-slit-intensity-1}
+\end{equation}
+where
+\begin{equation}
+  \beta = \frac{\pi d \sin(\theta)}{\lambda}
+\end{equation}
+and $d$ is the distance between the slits, $\theta$ is the observation angle, and $\lambda$ is the wavelength of the light. It is assumed that the intensity produced by each slit is the same, that is, $I_1 = I_2 = I_0$. However, the intensity from a single-slit diffraction depends on the angle of observation. If we combine Equations \eqref{eq:single-slit-intensity} and \eqref{eq:double-slit-intensity-1}, we obtain the intensity of the light in the Fraunhofer diffraction pattern produced by a double slit as
+\begin{equation}
+  I(\theta) = I_0 \left( \frac{\sin(\alpha)}{\alpha} \right)^2 \cos^2(\beta)
+  \label{eq:double-slit-intensity-2}
+\end{equation}
+The interference minimuma occur when
+\begin{equation}
+  \beta = (m + 1/2) \pi \quad \text{for} \quad m = 0, 1, 2, 3, \ldots
+\end{equation}
+and the maxima occur when
+\begin{equation}
+  \alpha = m \pi \quad \text{for} \quad m = 0, 1, 2, 3, \ldots
+\end{equation}  
+We will once again assume that the width of the slits is much smaller than the distance from the slits to the screen, that is, $d \ll L$. In this case, $\sin(\theta) \approx \tan(\theta) = y/L$, where $y$ is the distance from the center of the pattern to the $m$th minimum. Therefore, the wavelength of the light can be computed using the equation
+\begin{equation}
+  \lambda = \frac{d \bar{y}'}{L}
+\end{equation}
+where $\bar{y}'$ is the average distance between adjacent minima or maxima.
 
 \subsection*{Procedure} 
 
@@ -130,6 +189,13 @@ The purpose of part B is to compute the wavelength of the laser light using a do
 \subsection*{Errors}
 
 \subsection*{Approximations}
+
+The experiment makes several approximations. Some of them are as follows:
+
+\begin{itemize}
+  \item \textbf{Fraunhofer diffraction pattern:} The experiment assumes that the diffraction pattern is in the far field, that is, the distance from the slit to the screen is much larger than the width of the slit. This assumption is necessary to simplify the calculations and to obtain a simpler diffraction pattern. 
+  \item \textbf{Coherent light:} The experiment assumes that the light from the laser is coherent, that is, the light waves have the same frequency, wavelength, and constant relative phase. In reality, the light from the laser may not be perfectly coherent, which may affect the diffraction pattern.
+\end{itemize}
 
 \subsection*{Discrepancies}
 
