@@ -53,7 +53,7 @@ Diffraction is a phenomenon similar to interference that occurs when light passe
 
 Both interference and diffraction can be explained by the Huygens-Fresnel principle, which states that each point on a wavefront acts as a source of secondary spherical wavelets. The interference of these secondary wavelets produces the diffraction and interference patterns observed in experiments.
 
-The relative distances between the light source, the aperture, and the screen determine whether the diffraction pattern is in the near field or the far field. In the near field, the diffraction pattern is complex and varies with distance, and it is called the Fresnel diffraction pattern. In the far field, the diffraction pattern is simpler and does not vary with distance, since the secondary wavelets are approximately plane waves, and it is called the Fraunhofer diffraction pattern.
+The relative distances between the light source, the aperture, and the screen determine whether the diffraction pattern is in the near field or the far field. In the near field, the diffraction pattern is complex and varies with distance, and it is called the Fresnel diffraction pattern. In the far field, the diffraction pattern is simpler and does not vary with distance, since the secondary wavelets are approximately plane waves, and it is called the Fraunhofer diffraction pattern \cite{Hecht_2017}.
 
 \subsubsection*{Single-Slit Diffraction}
 
@@ -104,7 +104,7 @@ We will once again assume that the width of the slits is much smaller than the d
 \begin{equation}
   \lambda = \frac{d \bar{y}'}{L}
 \end{equation}
-where $\bar{y}'$ is the average distance between adjacent minima or maxima.
+where $\bar{y}'$ is the average distance between adjacent minima or maxima \cite{Pedrotti_2006}.
 
 \subsection*{Procedure} 
 
@@ -138,6 +138,8 @@ The purpose of part B is to compute the wavelength of the laser light using a do
 
 \subsection*{Part A}
 
+The results of part A are presented in Table (\ref{tab:1}).
+
 \begin{table}[ht]
   \centering
   \begin{tblr}{
@@ -162,6 +164,8 @@ The purpose of part B is to compute the wavelength of the laser light using a do
 \end{table}
 
 \subsection*{Part B}
+
+The results of part B are presented in Table (\ref{tab:2}).
 
 \begin{table}[ht]
   \centering
@@ -205,8 +209,16 @@ The experiment makes several approximations. Some of them are as follows:
 
 \section{Extra Credit}
 
-\td{Bro, if you once again write a one paragraph extra credit I will lose my mind.}
+One of the applications of diffraction is in the field of X-ray crystallography. It is a domain of experimental science concerned with the arrangement of atoms and molecules in a crystal. The underlying principle of X-ray crystallography is that the atoms in a crystal scatter X-rays in different directions, creating a diffraction pattern. By analyzing the diffraction pattern, scientists can determine the structure and properties of the crystal. X-ray crystallography has numerous applications in chemistry, biology, and materials science, including drug design, protein structure determination, and material characterization \cite{Carvalho_2009}.
 
-% \printbibliography
+Before the discovery of the X-ray diffraction, the structure of the crystals were determined by primitive methods. The x-rays were discovered by Wilhelm Conrad Röntgen in 1895, and the x-ray diffraction was discovered by Max von Laue in 1912. He bombarded crystals with x-rays in hopes of determining the nature of x-rays. The diffraction pattern confirmed the wave nature of x-rays and the periodic arrangement of atoms in crystals. The diffraction pattern was later analyzed by William Henry Bragg and his son William Lawrence Bragg, who developed the Bragg's law in 1912--1913, which relates the angle of diffraction to the spacing of the atomic planes in the crystal. The Bragg's law is given by the equation
+\begin{equation}
+  n \lambda = 2 d \sin(\theta)
+\end{equation}
+where $n$ is an integer, $\lambda$ is the wavelength of the x-rays, $d$ is the spacing of the atomic planes, and $\theta$ is the angle of diffraction. By measuring the angle of diffraction and the wavelength of the x-rays, scientists can determine the spacing of the atomic planes in the crystal. The Braggs were awarded the Nobel Prize in Physics in 1915 for their work on X-ray crystallography \cite{Bragg_1913}.
+
+One of the important applications of x-ray crystallography is in drug discovery and design. By determining the structure of a protein or enzyme, scientists can design drugs that target the protein or enzyme and inhibit its activity. This has led to the development of numerous drugs, including antibiotics, antiviral drugs, and anticancer drugs. X-ray crystallography has also been used to determine the structure of DNA, which has revolutionized the field of genetics and molecular biology. The discovery of the double helix structure of DNA by James Watson and Francis Crick in 1953 was based on x-ray diffraction data obtained by Rosalind Franklin and Maurice Wilkins. X-ray crystallography has also been used to determine the structure of many other biological molecules, including proteins, nucleic acids, and carbohydrates \cite{Bijak_2023}
+
+\printbibliography
 
 \end{document}
