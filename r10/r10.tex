@@ -45,7 +45,7 @@ The primary goal of this experiment is to examine the interference and diffracti
 
 \subsection*{General}
 
-The history bears witness to the fact that the nature of light has been a subject of debate for centuries. The wave theory of light, which posits that light is a wave, was first proposed by Christiaan Huygens in the 17th century. This theory was later supported by Thomas Young's double-slit experiment in the early 19th century. The wave theory of light was further developed by James Clerk Maxwell in the 19th century, who showed that light is an electromagnetic wave. The wave theory of light has been confirmed by numerous experiments, including the diffraction and interference of light.
+History bears witness to the fact that the nature of light has been a subject of debate for centuries. The wave theory of light, which posits that light is a wave, was first proposed by Christiaan Huygens in the 17th century. This theory was later supported by Thomas Young's double-slit experiment in the early 19th century. The wave theory of light was further developed by James Clerk Maxwell in the 19th century, who showed that light is an electromagnetic wave. The wave theory of light has been confirmed by numerous experiments, including the diffraction and interference of light.
 
 Interference is a phenomenon that occurs when two or more coherent waves overlap. Coherent waves are waves that have the same frequency, wavelength, and constant relative phase. When coherent waves overlap, they interfere constructively or destructively, creating a pattern of light and dark regions on a screen. This pattern is known as an interference pattern.
 
@@ -78,7 +78,7 @@ where $\bar{y}$ is the average distance between adjacent minima.
 
 \subsubsection*{Double-Slit Interference}
 
-The intensity of the light in the Fraunhofer diffraction pattern produced by a double slit is when ignoring the effect of the slits is given by the equation
+The intensity of the light in the Fraunhofer diffraction pattern produced by a double slit when ignoring the effect of the slits is given by the equation
 \begin{equation}
   I(\theta) = 4 I_0 \cos^2(\beta)
   \label{eq:double-slit-intensity-1}
@@ -92,7 +92,7 @@ and $d$ is the distance between the slits, $\theta$ is the observation angle, an
   I(\theta) = I_0 \left( \frac{\sin(\alpha)}{\alpha} \right)^2 \cos^2(\beta)
   \label{eq:double-slit-intensity-2}
 \end{equation}
-The interference minimuma occur when
+The interference minima occur when
 \begin{equation}
   \beta = (m + 1/2) \pi \quad \text{for} \quad m = 0, 1, 2, 3, \ldots
 \end{equation}
@@ -108,7 +108,14 @@ where $\bar{y}'$ is the average distance between adjacent minima or maxima \cite
 
 \subsection*{Procedure} 
 
-The experiment is comprised of two parts: part A and part B. The setup consists of a diode laser, a light sensor, a linear translator, single and double-slit disks, a rotary motion sensor, an aperture bracket, and a PASCO{\textsuperscript\textregistered} data logger. As a preliminary step, we will spend some time to familiarize ourselves with various diffraction patterns caused by different slit widths and combinations of near and far field regions.
+The experiment is comprised of two parts: part A and part B. The setup consists of a diode laser with an output of $\lambda = 650 \pm 10\,\unit{nm}$, a light sensor, a linear translator, single and double-slit disks, a rotary motion sensor, an aperture bracket, and a PASCO{\textsuperscript\textregistered} data logger. As a preliminary step, we will spend some time to familiarize ourselves with various diffraction patterns caused by different slit widths and combinations of near and far field regions. The setup is shown in Figure (\ref{fig:1}).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.6]{figures/f1.pdf}
+  \caption{The experimemtal setup.}
+  \label{fig:1}
+\end{figure}
 
 \subsubsection*{Part A}
 
@@ -136,10 +143,15 @@ The purpose of part B is to compute the wavelength of the laser light using a do
 
 \section{Data \& Results}
 
+The average distance between minima is calculated using the formula 
+\begin{equation}
+  \bar{y} = \frac{\lambda L}{a}
+\end{equation}
+where $\lambda$ is the wavelength of the light produced by the diode laser and is equal to \SI{650}{nm}.
+
 \subsection*{Part A}
 
 The results of part A are presented in Table (\ref{tab:1}).
-
 \begin{table}[ht]
   \centering
   \begin{tblr}{
@@ -151,10 +163,10 @@ The results of part A are presented in Table (\ref{tab:1}).
   }
     Pattern & A & B & C \\
     \hline 
-    Width of the slit, $a$ (\si{\mm}) & 0.16 & 0.008 & 0.04 \\
+    Width of the slit, $a$ (\si{\mm}) & 0.16 & 0.08 & 0.04 \\
     Distance from the slit to the screen, $L$ (\si{cm}) & 84.5 & 84.5 & 84.5 \\
-    Average distance between minima, $\bar{y}$ (\si{cm}) \\
-    $\bar{\lambda} = a\bar{y}/L$ (\si{nm}) \\
+    Average distance between minima, $\bar{y}$ (\si{cm}) & 0.34 & 0.69 & 1.37 \\
+    $\bar{\lambda} = a\bar{y}/L$ (\si{nm}) & 644 & 653 & 649 \\
     Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) \\
     Error $\Delta \lambda$ in $\bar{\lambda} = a \Delta y / L$ (\si{nm}) \\
     $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) \\
@@ -178,10 +190,10 @@ The results of part B are presented in Table (\ref{tab:2}).
   }
     Pattern & D & E & F \\
     \hline 
-    Width of the slit, $a$ (\si{\mm}) & 0.5 & 0.025 & 0.0125 \\
+    Width of the slit, $d$ (\si{\mm}) & 0.5 & 0.25 & 0.125 \\
     Distance from the slit to the screen, $L$ (\si{cm}) & 84.5 & 84.5 & 84.5 \\
-    Average distance between minima, $\bar{y}$ (\si{cm}) \\
-    $\bar{\lambda} = d\bar{y}/L$ (\si{nm}) \\
+    Average distance between minima, $\bar{y}$ (\si{cm}) & 0.11 & 0.22 & 0.44 \\
+    $\bar{\lambda} = d\bar{y}/L$ (\si{nm}) & 651 & 651 & 651 \\
     Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) \\
     Error $\Delta \lambda$ in $\bar{\lambda} = d \Delta y / L$ (\si{nm}) \\
     $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) \\
@@ -211,13 +223,22 @@ The experiment makes several approximations. Some of them are as follows:
 
 One of the applications of diffraction is in the field of X-ray crystallography. It is a domain of experimental science concerned with the arrangement of atoms and molecules in a crystal. The underlying principle of X-ray crystallography is that the atoms in a crystal scatter X-rays in different directions, creating a diffraction pattern. By analyzing the diffraction pattern, scientists can determine the structure and properties of the crystal. X-ray crystallography has numerous applications in chemistry, biology, and materials science, including drug design, protein structure determination, and material characterization \cite{Carvalho_2009}.
 
-Before the discovery of the X-ray diffraction, the structure of the crystals were determined by primitive methods. The x-rays were discovered by Wilhelm Conrad Röntgen in 1895, and the x-ray diffraction was discovered by Max von Laue in 1912. He bombarded crystals with x-rays in hopes of determining the nature of x-rays. The diffraction pattern confirmed the wave nature of x-rays and the periodic arrangement of atoms in crystals. The diffraction pattern was later analyzed by William Henry Bragg and his son William Lawrence Bragg, who developed the Bragg's law in 1912--1913, which relates the angle of diffraction to the spacing of the atomic planes in the crystal. The Bragg's law is given by the equation
+Before the discovery of X-ray diffraction, the structure of the crystals was determined by primitive methods. The X-rays were discovered by Wilhelm Conrad Röntgen in 1895, and x-ray diffraction was discovered by Max von Laue in 1912. He bombarded crystals with X-rays in hopes of determining the nature of X-rays. The diffraction pattern confirmed the wave nature of X-rays and the periodic arrangement of atoms in crystals. The diffraction pattern was later analyzed by William Henry Bragg and his son William Lawrence Bragg, who developed Bragg's law in 1912--1913, which relates the angle of diffraction to the spacing of the atomic planes in the crystal. The Bragg's law is given by the equation
 \begin{equation}
   n \lambda = 2 d \sin(\theta)
 \end{equation}
 where $n$ is an integer, $\lambda$ is the wavelength of the x-rays, $d$ is the spacing of the atomic planes, and $\theta$ is the angle of diffraction. By measuring the angle of diffraction and the wavelength of the x-rays, scientists can determine the spacing of the atomic planes in the crystal. The Braggs were awarded the Nobel Prize in Physics in 1915 for their work on X-ray crystallography \cite{Bragg_1913}.
 
-One of the important applications of x-ray crystallography is in drug discovery and design. By determining the structure of a protein or enzyme, scientists can design drugs that target the protein or enzyme and inhibit its activity. This has led to the development of numerous drugs, including antibiotics, antiviral drugs, and anticancer drugs. X-ray crystallography has also been used to determine the structure of DNA, which has revolutionized the field of genetics and molecular biology. The discovery of the double helix structure of DNA by James Watson and Francis Crick in 1953 was based on x-ray diffraction data obtained by Rosalind Franklin and Maurice Wilkins. X-ray crystallography has also been used to determine the structure of many other biological molecules, including proteins, nucleic acids, and carbohydrates \cite{Bijak_2023}
+In biology, molecules are often too small to be seen with a light microscope. X-ray crystallography allows scientists to determine the structure of these molecules at the atomic level. This has led to numerous discoveries in biology, including the solution of cholesterol (1937), penicillin (1945), vitamin B\textsubscript{12} (1956) by English chemist Dorothy Crowfoot Hodgkin, for which she was awarded the Nobel Prize in Chemistry in 1964. The three-dimensional structure of penicillin is shown in Figure (\ref{fig:2}).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.2]{figures/f2.png}
+  \caption{The three-dimensional structure of penicillin. Image credit: Bassophile (Creator). July 12, 2007. Retrieved May 26, 2024, from: \url{https://commons.wikimedia.org/w/index.php?curid=17230435}}
+  \label{fig:2}
+\end{figure}
+
+One of the important applications of X-ray crystallography is in drug discovery and design. By determining the structure of a protein or enzyme, scientists can design drugs that target the protein or enzyme and inhibit its activity. This has led to the development of numerous drugs, including antibiotics, antiviral drugs, and anticancer drugs. X-ray crystallography has also been used to determine the structure of DNA, which has revolutionized the field of genetics and molecular biology. The discovery of the double helix structure of DNA by James Watson and Francis Crick in 1953 was based on x-ray diffraction data obtained by Rosalind Franklin and Maurice Wilkins. X-ray crystallography has also been used to determine the structure of many other biological molecules, including proteins, nucleic acids, and carbohydrates \cite{Bijak_2023}.
 
 \printbibliography
 
