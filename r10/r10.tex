@@ -35,9 +35,7 @@
 
 \begin{abstract}
 
-\td{Please expand more on the abstract to hit 200 words and include the information from the data calculation and discussion sections that you will write.}
-
-The primary goal of this experiment is to examine the interference and diffraction phenomena when light passes through disparate apertures. The experiment is divided into two parts: part A and part B. In part A, the wavelength of the laser light is computed using a single-slit disk. In part B, the wavelength of the laser light is computed using a double-slit disk. The results of the experiment are presented in the tables below. The errors in the measurements are also calculated. The experiment makes several approximations, including the Fraunhofer diffraction pattern and coherent light. The discrepancies between the theoretical and experimental values are discussed. The experiment is concluded by summarizing the results and discussing the possible sources of error.
+The primary goal of this experiment is to examine the interference and diffraction phenomena when light passes through disparate apertures. The experiment is divided into two parts: part A and part B. In part A, the wavelength of the laser light is computed using a single-slit disk. In part B, the wavelength of the laser light is computed using a double-slit disk. The results of the experiment are presented in the tables below. The errors in the measurements are also calculated. The experiment makes several approximations, including the Fraunhofer diffraction pattern and coherent light. The discrepancies between the theoretical and experimental values were found to be negligible. The sources of error, such as ambient light, sensor limitations, and human error, were discussed. The applications of diffraction in X-ray crystallography were also discussed. The experiment was concluded by summarizing the results and discussing the possible sources of error. The results indicate the success of the experiment.
 
 \end{abstract}
 
@@ -113,7 +111,7 @@ The experiment is comprised of two parts: part A and part B. The setup consists 
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=0.6]{figures/f1.pdf}
-  \caption{The experimemtal setup.}
+  \caption{The experimental setup.}
   \label{fig:1}
 \end{figure}
 
@@ -143,17 +141,12 @@ The purpose of part B is to compute the wavelength of the laser light using a do
 
 \section{Data \& Results}
 
-The average distance between minima is calculated using the formula 
-\begin{equation}
-  \bar{y} = \frac{\lambda L}{a}
-\end{equation}
-where $\lambda$ is the wavelength of the light produced by the diode laser and is equal to \SI{650}{nm}.
-
 \subsection*{Part A}
 
 The results of part A are presented in Table (\ref{tab:1}).
 \begin{table}[ht]
   \centering
+  \tiny
   \begin{tblr}{
     cells = {halign = c, valign = m},
     column{1} = {halign = l},
@@ -165,11 +158,11 @@ The results of part A are presented in Table (\ref{tab:1}).
     \hline 
     Width of the slit, $a$ (\si{\mm}) & 0.16 & 0.08 & 0.04 \\
     Distance from the slit to the screen, $L$ (\si{cm}) & 84.5 & 84.5 & 84.5 \\
-    Average distance between minima, $\bar{y}$ (\si{cm}) & 0.34 & 0.69 & 1.37 \\
+    Average distance between minima, $\bar{y}$ (\si{cm}) & 0.340 & 0.690 & 1.37 \\
     $\bar{\lambda} = a\bar{y}/L$ (\si{nm}) & 644 & 653 & 649 \\
-    Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) \\
-    Error $\Delta \lambda$ in $\bar{\lambda} = a \Delta y / L$ (\si{nm}) \\
-    $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) \\
+    Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) & 0.009 & 0.024 & 0.04 \\
+    Error $\Delta \lambda$ in $\bar{\lambda} = a \Delta y / L$ (\si{nm}) & 17 & 23 & 19 \\
+    $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) & 644 $\pm$ 17 & 653 $\pm$ 23 & 649 $\pm$ 19 \\
   \end{tblr}
   \caption{Results of the first part of the experiment.}
   \label{tab:1}
@@ -181,6 +174,7 @@ The results of part B are presented in Table (\ref{tab:2}).
 
 \begin{table}[ht]
   \centering
+  \tiny
   \begin{tblr}{
     cells = {halign = c, valign = m},
     column{1} = {halign = l},
@@ -192,19 +186,28 @@ The results of part B are presented in Table (\ref{tab:2}).
     \hline 
     Width of the slit, $d$ (\si{\mm}) & 0.5 & 0.25 & 0.125 \\
     Distance from the slit to the screen, $L$ (\si{cm}) & 84.5 & 84.5 & 84.5 \\
-    Average distance between minima, $\bar{y}$ (\si{cm}) & 0.11 & 0.22 & 0.44 \\
-    $\bar{\lambda} = d\bar{y}/L$ (\si{nm}) & 651 & 651 & 651 \\
-    Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) \\
-    Error $\Delta \lambda$ in $\bar{\lambda} = d \Delta y / L$ (\si{nm}) \\
-    $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) \\
+    Average distance between minima, $\bar{y}$ (\si{cm}) & 0.108 & 0.223 & 0.430 \\
+    $\bar{\lambda} = d\bar{y}/L$ (\si{nm}) & 639 & 660 & 636 \\
+    Error $\Delta y$ in $\bar{y} = \sqrt{\sum_{i=1}^N (y_i - \bar{y})^2/(N-1)}$ (\si{cm}) & 0.002 & 0.005 & 0.011 \\
+    Error $\Delta \lambda$ in $\bar{\lambda} = d \Delta y / L$ (\si{nm}) & 12 & 15 & 16\\
+    $\lambda = \bar{\lambda} \pm \Delta \lambda$ (\si{nm}) & 639 $\pm$ 12 & 660 $\pm$ 15 & 636 $\pm$ 16 \\
   \end{tblr}
   \caption{Results of the second part of the experiment.}
   \label{tab:2}
 \end{table}
 
+The values of the wavelength of the laser light obtained in parts A and B are consistent with the known value of the wavelength of the laser light, $\lambda = 650 \pm 10\,\unit{nm}$. The errors in the measurements are within the range of the experimental values. The discrepancies between the theoretical and experimental values are negligible.
+
 \section{Discussion \& Conclusion}
 
 \subsection*{Errors}
+
+There are several sources of error, such as ambient light, sensor limitations, and human error:
+\begin{itemize}
+  \item \textbf{Ambient light:} The experiment is conducted in a laboratory environment, where there may be ambient light that affects the diffraction pattern. To minimize this error, the aperture disk is rotated to block ambient light and to ensure that the sensor is between maxima of the diffraction pattern. However, some ambient light may still reach the sensor, affecting the measurements.
+  \item \textbf{Sensor limitations:} Both the light sensor and the rotary motion sensor have limitations in their accuracy and precision. The light sensor may not be able to detect low-intensity light, and the rotary motion sensor may not be able to measure the position of the sensor accurately. To minimize this error, the sensors are calibrated before the experiment, and the measurements are repeated several times to obtain an average value.
+  \item \textbf{Human error:} The experiment involves several manual steps, such as aligning the laser beam with the slit, adjusting the position of the sensor, and recording the data. Human error may occur at any of these steps, affecting the measurements. 
+\end{itemize}
 
 \subsection*{Approximations}
 
@@ -217,24 +220,28 @@ The experiment makes several approximations. Some of them are as follows:
 
 \subsection*{Discrepancies}
 
+As we can see from the results, there are negligible discrepancies between the theoretical and experimental values of the wavelength of the laser light since the errors are within the range of the experimental values. 
+
 \subsection*{Conclusion} 
+
+In conclusion, we observed the interference and diffraction phenomena when light passes through sing;e and double slits. The wavelength of the laser light was computed using the Fraunhofer diffraction pattern. The discrepancies between the theoretical and experimental values were discussed. The experiment was concluded by summarizing the results and discussing the possible sources of error. The results indicate the success of the experiment.
 
 \section{Extra Credit}
 
 One of the applications of diffraction is in the field of X-ray crystallography. It is a domain of experimental science concerned with the arrangement of atoms and molecules in a crystal. The underlying principle of X-ray crystallography is that the atoms in a crystal scatter X-rays in different directions, creating a diffraction pattern. By analyzing the diffraction pattern, scientists can determine the structure and properties of the crystal. X-ray crystallography has numerous applications in chemistry, biology, and materials science, including drug design, protein structure determination, and material characterization \cite{Carvalho_2009}.
 
-Before the discovery of X-ray diffraction, the structure of the crystals was determined by primitive methods. The X-rays were discovered by Wilhelm Conrad Röntgen in 1895, and x-ray diffraction was discovered by Max von Laue in 1912. He bombarded crystals with X-rays in hopes of determining the nature of X-rays. The diffraction pattern confirmed the wave nature of X-rays and the periodic arrangement of atoms in crystals. The diffraction pattern was later analyzed by William Henry Bragg and his son William Lawrence Bragg, who developed Bragg's law in 1912--1913, which relates the angle of diffraction to the spacing of the atomic planes in the crystal. The Bragg's law is given by the equation
+Before the discovery of X-ray diffraction, the structure of the crystals was determined by primitive methods. The X-rays were discovered by Wilhelm Conrad Röntgen in 1895, and X-ray diffraction was discovered by Max von Laue in 1912. He bombarded crystals with X-rays in hopes of determining the nature of X-rays. The diffraction pattern confirmed the wave nature of X-rays and the periodic arrangement of atoms in crystals. The diffraction pattern was later analyzed by William Henry Bragg and his son William Lawrence Bragg, who developed Bragg's law in 1912--1913, which relates the angle of diffraction to the spacing of the atomic planes in the crystal. The Bragg's law is given by the equation
 \begin{equation}
   n \lambda = 2 d \sin(\theta)
 \end{equation}
 where $n$ is an integer, $\lambda$ is the wavelength of the x-rays, $d$ is the spacing of the atomic planes, and $\theta$ is the angle of diffraction. By measuring the angle of diffraction and the wavelength of the x-rays, scientists can determine the spacing of the atomic planes in the crystal. The Braggs were awarded the Nobel Prize in Physics in 1915 for their work on X-ray crystallography \cite{Bragg_1913}.
 
-In biology, molecules are often too small to be seen with a light microscope. X-ray crystallography allows scientists to determine the structure of these molecules at the atomic level. This has led to numerous discoveries in biology, including the solution of cholesterol (1937), penicillin (1945), vitamin B\textsubscript{12} (1956) by English chemist Dorothy Crowfoot Hodgkin, for which she was awarded the Nobel Prize in Chemistry in 1964. The three-dimensional structure of penicillin is shown in Figure (\ref{fig:2}).
+In biology, molecules are often too small to be seen with a light microscope. X-ray crystallography allows scientists to determine the structure of these molecules at the atomic level. This has led to numerous discoveries in biology, including the solution of cholesterol (1937), penicillin (1945), and vitamin B\textsubscript{12} (1956) by English chemist Dorothy Crowfoot Hodgkin, for which she was awarded the Nobel Prize in Chemistry in 1964. The three-dimensional structure of penicillin is shown in Figure (\ref{fig:2}).
 
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=0.2]{figures/f2.png}
-  \caption{The three-dimensional structure of penicillin. Image credit: Bassophile (Creator). July 12, 2007. Retrieved May 26, 2024, from: \url{https://commons.wikimedia.org/w/index.php?curid=17230435}}
+  \caption{The three-dimensional structure of penicillin. Credit: Bassophile (Creator). July 12, 2007. Retrieved May 26, 2024, from: \url{https://commons.wikimedia.org/w/index.php?curid=17230435}}
   \label{fig:2}
 \end{figure}
 
